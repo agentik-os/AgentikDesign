@@ -1,5 +1,5 @@
 {
-  "name": "@open-design/desktop",
+  "name": "@agentik-design/desktop",
   "version": "0.4.1",
   "private": true,
   "type": "module",
@@ -18,9 +18,9 @@
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@open-design/platform": "workspace:*",
-    "@open-design/sidecar": "workspace:*",
-    "@open-design/sidecar-proto": "workspace:*"
+    "@agentik-design/platform": "workspace:*",
+    "@agentik-design/sidecar": "workspace:*",
+    "@agentik-design/sidecar-proto": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "24.12.2",

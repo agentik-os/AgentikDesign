@@ -1,4 +1,6 @@
-# Open Design
+# Agentik Design
+
+> **Maintained by [Agentik OS](https://agentik-os.com).** Forked from [nexu-io/open-design](https://github.com/nexu-io/open-design) (Apache-2.0). See [NOTICE.md](NOTICE.md) for full attribution.
 
 > **[Claude Design][cd]의 오픈소스 대안.** 로컬 우선, 웹 배포 가능, 모든 레이어에서 BYOK — `PATH`에서 자동 감지되는 **16개의 코딩 에이전트 CLI**(Claude Code, Codex, Devin for Terminal, Cursor Agent, Gemini CLI, OpenCode, Qwen, Qoder CLI, GitHub Copilot CLI, Hermes, Kimi, Pi, Kiro, Kilo, Mistral Vibe, DeepSeek TUI)가 **31가지 조합 가능한 Skill**과 **72가지 브랜드급 디자인 시스템**으로 구동되는 디자인 엔진이 됩니다. CLI가 하나도 없다? OpenAI 호환 BYOK 프록시가 spawn만 빠진 동일한 루프를 돌립니다.
 
@@ -7,18 +9,18 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/nexu-io/open-design/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=ffd700&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=2ecc71&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/issues"><img alt="Issues" src="https://img.shields.io/github/issues/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=ff6b6b&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/pulls"><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=9b59b6&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=3498db&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/commits/main"><img alt="Commit activity" src="https://img.shields.io/github/commit-activity/m/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=e67e22&logo=git&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=8e44ad&logo=git&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=ffd700&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=2ecc71&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/issues"><img alt="Issues" src="https://img.shields.io/github/issues/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=ff6b6b&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/pulls"><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=9b59b6&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=3498db&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/commits/main"><img alt="Commit activity" src="https://img.shields.io/github/commit-activity/m/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=e67e22&logo=git&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=8e44ad&logo=git&logoColor=white" /></a>
 </p>
 
 <p align="center">
   <a href="https://open-design.ai/"><img alt="다운로드" src="https://img.shields.io/badge/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-open--design.ai-ff6b35?style=flat-square" /></a>
-  <a href="https://github.com/nexu-io/open-design/releases"><img alt="Latest release" src="https://img.shields.io/github/v/release/nexu-io/open-design?style=flat-square&color=blueviolet&label=release&include_prereleases&display_name=tag" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/releases"><img alt="Latest release" src="https://img.shields.io/github/v/release/agentik-os/AgentikDesign?style=flat-square&color=blueviolet&label=release&include_prereleases&display_name=tag" /></a>
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat-square" /></a>
   <a href="#지원하는-코딩-에이전트"><img alt="Agents" src="https://img.shields.io/badge/agents-16%20CLIs%20%2B%20BYOK%20proxy-black?style=flat-square" /></a>
   <a href="#디자인-시스템"><img alt="Design systems" src="https://img.shields.io/badge/design%20systems-72-orange?style=flat-square" /></a>
@@ -64,7 +66,7 @@ OD는 네 개의 오픈소스 프로젝트의 어깨 위에 서 있습니다:
 | **영속성** | `.od/app.sqlite`의 SQLite: projects · conversations · messages · tabs · 사용자 templates. 내일 다시 열면 todo 카드와 열린 파일 모두 어제 그 자리. |
 | **라이프사이클** | 단일 입구 `pnpm tools-dev`(start / stop / run / status / logs / inspect / check) — 타입화된 sidecar 스탬프로 daemon + web(+ desktop) 구동 |
 | **데스크탑** | 선택적 Electron 셸: 샌드박스 렌더러 + sidecar IPC(STATUS / EVAL / SCREENSHOT / CONSOLE / CLICK / SHUTDOWN) — 같은 채널이 `tools-dev inspect desktop screenshot`을 구동해 E2E를 돌립니다 |
-| **배포 대상** | 로컬 (`pnpm tools-dev`) · Vercel 웹 레이어 · macOS (Apple Silicon)와 Windows (x64)용 패키지된 Electron 데스크톱 앱 — [open-design.ai](https://open-design.ai/) 또는 [최신 릴리스](https://github.com/nexu-io/open-design/releases)에서 다운로드 |
+| **배포 대상** | 로컬 (`pnpm tools-dev`) · Vercel 웹 레이어 · macOS (Apple Silicon)와 Windows (x64)용 패키지된 Electron 데스크톱 앱 — [open-design.ai](https://open-design.ai/) 또는 [최신 릴리스](https://github.com/agentik-os/AgentikDesign/releases)에서 다운로드 |
 | **라이선스** | Apache-2.0 |
 
 [acd2]: https://github.com/VoltAgent/awesome-design-md
@@ -305,12 +307,12 @@ DISCOVERY 지시문    (turn-1 폼, turn-2 브랜드 분기, TodoWrite, 5차원 
 Open Design을 가장 빠르게 사용해 보는 방법은 사전 빌드된 데스크톱 앱입니다 — Node도, pnpm도, clone도 필요 없습니다:
 
 - **[open-design.ai](https://open-design.ai/)** — 공식 다운로드 페이지
-- **[GitHub 릴리스](https://github.com/nexu-io/open-design/releases)**
+- **[GitHub 릴리스](https://github.com/agentik-os/AgentikDesign/releases)**
 
 ### 소스에서 실행
 
 ```bash
-git clone https://github.com/nexu-io/open-design.git
+git clone https://github.com/agentik-os/AgentikDesign.git
 cd open-design
 corepack enable
 corepack pnpm --version   # 10.33.2가 출력되어야 합니다
@@ -684,7 +686,7 @@ daemon 부팅 시 `PATH`에서 자동 감지됩니다. 설정 필요 없음. 스
 - [ ] Vercel + 터널 배포 레시피(Topology B)
 - [ ] `DESIGN.md`로 프로젝트를 스캐폴딩하는 원클릭 `npx od init`
 - [ ] Skill 마켓플레이스(`od skills install <github-repo>`)와 `od skill add | list | remove | test` CLI 표면([`docs/skills-protocol.md`](docs/skills-protocol.md)에 초안 작성됨, 구현 미완)
-- [x] `apps/packaged/`에서 패키지된 Electron 빌드 — macOS (Apple Silicon) 및 Windows (x64) 다운로드는 [open-design.ai](https://open-design.ai/)와 [GitHub 릴리스 페이지](https://github.com/nexu-io/open-design/releases)에서 제공
+- [x] `apps/packaged/`에서 패키지된 Electron 빌드 — macOS (Apple Silicon) 및 Windows (x64) 다운로드는 [open-design.ai](https://open-design.ai/)와 [GitHub 릴리스 페이지](https://github.com/agentik-os/AgentikDesign/releases)에서 제공
 
 단계별 배포 → [`docs/roadmap.md`](docs/roadmap.md).
 
@@ -695,10 +697,10 @@ daemon 부팅 시 `PATH`에서 자동 감지됩니다. 설정 필요 없음. 스
 ## 스타 주세요
 
 <p align="center">
-  <a href="https://github.com/nexu-io/open-design"><img src="docs/assets/star-us.png" alt="GitHub에서 Open Design에 스타 주기 — github.com/nexu-io/open-design" width="100%" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign"><img src="docs/assets/star-us.png" alt="GitHub에서 Open Design에 스타 주기 — github.com/agentik-os/AgentikDesign" width="100%" /></a>
 </p>
 
-이것이 30분을 절약해줬다면 — ★를 주세요. 스타가 사용료를 대신 내지는 않지만, 다음 디자이너, 에이전트, 기여자에게 이 실험이 그들의 관심을 받을 가치가 있다는 것을 알려줍니다. 한 번의 클릭, 3초, 진짜 신호: [github.com/nexu-io/open-design](https://github.com/nexu-io/open-design).
+이것이 30분을 절약해줬다면 — ★를 주세요. 스타가 사용료를 대신 내지는 않지만, 다음 디자이너, 에이전트, 기여자에게 이 실험이 그들의 관심을 받을 가치가 있다는 것을 알려줍니다. 한 번의 클릭, 3초, 진짜 신호: [github.com/agentik-os/AgentikDesign](https://github.com/agentik-os/AgentikDesign).
 
 ## 기여
 
@@ -714,11 +716,11 @@ daemon 부팅 시 `PATH`에서 자동 감지됩니다. 설정 필요 없음. 스
 
 Open Design을 앞으로 나아가게 도와준 모든 분께 감사드립니다 — 코드, 문서, 피드백, 새 skill, 새 디자인 시스템, 또는 날카로운 이슈 하나라도. 모든 진짜 기여가 의미 있고, 아래의 벽이 가장 직접적인 "감사합니다"입니다.
 
-<a href="https://github.com/nexu-io/open-design/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=nexu-io/open-design&cache_bust=2026-05-07" alt="Open Design 컨트리뷰터" />
+<a href="https://github.com/agentik-os/AgentikDesign/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=agentik-os/AgentikDesign&cache_bust=2026-05-07" alt="Open Design 컨트리뷰터" />
 </a>
 
-첫 PR을 보냈다면 — 환영합니다. [`good-first-issue`/`help-wanted`](https://github.com/nexu-io/open-design/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22%2C%22help+wanted%22) 레이블이 시작점입니다.
+첫 PR을 보냈다면 — 환영합니다. [`good-first-issue`/`help-wanted`](https://github.com/agentik-os/AgentikDesign/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22%2C%22help+wanted%22) 레이블이 시작점입니다.
 
 ## 저장소 활동
 
@@ -730,11 +732,11 @@ Open Design을 앞으로 나아가게 도와준 모든 분께 감사드립니다
 
 ## Star History
 
-<a href="https://star-history.com/#nexu-io/open-design&Date">
+<a href="https://star-history.com/#agentik-os/AgentikDesign&Date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=nexu-io/open-design&type=Date&theme=dark&cache_bust=2026-05-07" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=nexu-io/open-design&type=Date&cache_bust=2026-05-07" />
-    <img alt="Open Design star history" src="https://api.star-history.com/svg?repos=nexu-io/open-design&type=Date&cache_bust=2026-05-07" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&theme=dark&cache_bust=2026-05-07" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&cache_bust=2026-05-07" />
+    <img alt="Open Design star history" src="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&cache_bust=2026-05-07" />
   </picture>
 </a>
 
@@ -749,3 +751,7 @@ Open Design을 앞으로 나아가게 도와준 모든 분께 감사드립니다
 ## 라이선스
 
 Apache-2.0. 번들된 `skills/guizang-ppt/`는 원래 [LICENSE](skills/guizang-ppt/LICENSE)(MIT)와 [op7418](https://github.com/op7418)에 대한 저작권 표시를 유지합니다. 번들된 `skills/html-ppt/`는 원래 [LICENSE](skills/html-ppt/LICENSE)(MIT)와 [lewislulu](https://github.com/lewislulu)에 대한 저작권 표시를 유지합니다.
+
+## Credits / Upstream
+
+**Agentik Design** is a fork of [Open Design](https://github.com/nexu-io/open-design) by [nexu-io](https://github.com/nexu-io). Distributed under the Apache License 2.0. See [NOTICE.md](NOTICE.md) and the [LICENSE](LICENSE) file.

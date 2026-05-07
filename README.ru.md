@@ -1,4 +1,6 @@
-# Open Design
+# Agentik Design
+
+> **Maintained by [Agentik OS](https://agentik-os.com).** Forked from [nexu-io/open-design](https://github.com/nexu-io/open-design) (Apache-2.0). See [NOTICE.md](NOTICE.md) for full attribution.
 
 > **Открытая альтернатива [Claude Design][cd].** Локально-ориентированная, пригодная для web-деплоя, с BYOK на каждом уровне: **16 CLI coding-агентов** автоматически обнаруживаются в вашем `PATH` (Claude Code, Codex, Devin for Terminal, Cursor Agent, Gemini CLI, OpenCode, Qwen, Qoder CLI, GitHub Copilot CLI, Hermes, Kimi, Pi, Kiro, Kilo, Mistral Vibe, DeepSeek TUI) и превращаются в движок генерации дизайна, управляемый **31 комбинируемым навыком** и **72 дизайн-системами уровня бренда**. Нет CLI? OpenAI-совместимый BYOK-прокси даёт тот же цикл без локального запуска агента.
 
@@ -7,18 +9,18 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/nexu-io/open-design/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=ffd700&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=2ecc71&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/issues"><img alt="Issues" src="https://img.shields.io/github/issues/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=ff6b6b&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/pulls"><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=9b59b6&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=3498db&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/commits/main"><img alt="Commit activity" src="https://img.shields.io/github/commit-activity/m/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=e67e22&logo=git&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=8e44ad&logo=git&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=ffd700&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=2ecc71&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/issues"><img alt="Issues" src="https://img.shields.io/github/issues/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=ff6b6b&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/pulls"><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=9b59b6&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=3498db&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/commits/main"><img alt="Commit activity" src="https://img.shields.io/github/commit-activity/m/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=e67e22&logo=git&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=8e44ad&logo=git&logoColor=white" /></a>
 </p>
 
 <p align="center">
   <a href="https://open-design.ai/"><img alt="Скачать" src="https://img.shields.io/badge/%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-open--design.ai-ff6b35?style=flat-square" /></a>
-  <a href="https://github.com/nexu-io/open-design/releases"><img alt="Latest release" src="https://img.shields.io/github/v/release/nexu-io/open-design?style=flat-square&color=blueviolet&label=release&include_prereleases&display_name=tag" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/releases"><img alt="Latest release" src="https://img.shields.io/github/v/release/agentik-os/AgentikDesign?style=flat-square&color=blueviolet&label=release&include_prereleases&display_name=tag" /></a>
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat-square" /></a>
   <a href="#поддерживаемые-coding-agent-cli"><img alt="Agents" src="https://img.shields.io/badge/agents-16%20CLIs%20%2B%20BYOK%20proxy-black?style=flat-square" /></a>
   <a href="#системы-дизайна"><img alt="Design systems" src="https://img.shields.io/badge/design%20systems-72-orange?style=flat-square" /></a>
@@ -64,7 +66,7 @@ OD стоит на плечах четырёх open-source проектов:
 | **Persistence** | SQLite в `.od/app.sqlite`: projects · conversations · messages · tabs · saved templates. Откройте завтра — и todo card с открытыми файлами будут ровно там, где вы их оставили. |
 | **Lifecycle** | Единая точка входа: `pnpm tools-dev` (start / stop / run / status / logs / inspect / check) — поднимает daemon + web (+ desktop) под typed sidecar stamps |
 | **Desktop** | Опциональная Electron-оболочка с sandboxed renderer + sidecar IPC (STATUS / EVAL / SCREENSHOT / CONSOLE / CLICK / SHUTDOWN) — именно через неё работает `tools-dev inspect desktop screenshot` для E2E |
-| **Deployable to** | Локально (`pnpm tools-dev`) · web-слой на Vercel · упакованное Electron desktop-приложение для macOS (Apple Silicon) и Windows (x64) — скачать на [open-design.ai](https://open-design.ai/) или на [странице последнего релиза](https://github.com/nexu-io/open-design/releases) |
+| **Deployable to** | Локально (`pnpm tools-dev`) · web-слой на Vercel · упакованное Electron desktop-приложение для macOS (Apple Silicon) и Windows (x64) — скачать на [open-design.ai](https://open-design.ai/) или на [странице последнего релиза](https://github.com/agentik-os/AgentikDesign/releases) |
 | **License** | Apache-2.0 |
 
 [acd2]: https://github.com/VoltAgent/awesome-design-md
@@ -306,12 +308,12 @@ DISCOVERY directives  (turn-1 form, turn-2 brand branch, TodoWrite, 5-dim critiq
 Самый быстрый способ попробовать Open Design — готовое desktop-приложение, без Node, pnpm и клонирования:
 
 - **[open-design.ai](https://open-design.ai/)** — официальная страница загрузки
-- **[GitHub-релизы](https://github.com/nexu-io/open-design/releases)**
+- **[GitHub-релизы](https://github.com/agentik-os/AgentikDesign/releases)**
 
 ### Запуск из исходников
 
 ```bash
-git clone https://github.com/nexu-io/open-design.git
+git clone https://github.com/agentik-os/AgentikDesign.git
 cd open-design
 corepack enable
 corepack pnpm --version   # должно вывести 10.33.2
@@ -689,7 +691,7 @@ OD не заканчивается на коде. Тот же чатовый sur
 - [ ] Рецепт деплоя на Vercel + через tunnel (Topology B)
 - [ ] Однокомандный `npx od init`, создающий проект с `DESIGN.md`
 - [ ] Marketplace навыков (`od skills install <github-repo>`) и CLI surface `od skill add | list | remove | test` (набросан в [`docs/skills-protocol.md`](docs/skills-protocol.md), реализация впереди)
-- [x] Packaged Electron build на базе `apps/packaged/` — загрузки для macOS (Apple Silicon) и Windows (x64) на [open-design.ai](https://open-design.ai/) и [странице релизов GitHub](https://github.com/nexu-io/open-design/releases)
+- [x] Packaged Electron build на базе `apps/packaged/` — загрузки для macOS (Apple Silicon) и Windows (x64) на [open-design.ai](https://open-design.ai/) и [странице релизов GitHub](https://github.com/agentik-os/AgentikDesign/releases)
 
 Поэтапная поставка → [`docs/roadmap.md`](docs/roadmap.md).
 
@@ -700,10 +702,10 @@ OD не заканчивается на коде. Тот же чатовый sur
 ## Поставьте звезду
 
 <p align="center">
-  <a href="https://github.com/nexu-io/open-design"><img src="docs/assets/star-us.png" alt="Поставьте звезду Open Design на GitHub — github.com/nexu-io/open-design" width="100%" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign"><img src="docs/assets/star-us.png" alt="Поставьте звезду Open Design на GitHub — github.com/agentik-os/AgentikDesign" width="100%" /></a>
 </p>
 
-Если OD сэкономил вам хотя бы тридцать минут — подарите ему ★. Звёзды не платят аренду, но показывают следующему дизайнеру, агенту и контрибьютору, что этот эксперимент заслуживает внимания. Один клик, три секунды, реальный сигнал: [github.com/nexu-io/open-design](https://github.com/nexu-io/open-design).
+Если OD сэкономил вам хотя бы тридцать минут — подарите ему ★. Звёзды не платят аренду, но показывают следующему дизайнеру, агенту и контрибьютору, что этот эксперимент заслуживает внимания. Один клик, три секунды, реальный сигнал: [github.com/agentik-os/AgentikDesign](https://github.com/agentik-os/AgentikDesign).
 
 ## Как участвовать
 
@@ -719,11 +721,11 @@ Issues, PR, новые skills и новые design systems приветству�
 
 Спасибо всем, кто помогает двигать Open Design вперёд — кодом, документацией, обратной связью, новыми skills, новыми design systems или просто точным issue. Вклад любого реального масштаба здесь важен, а стена ниже — самый простой способ сказать это вслух.
 
-<a href="https://github.com/nexu-io/open-design/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=nexu-io/open-design&cache_bust=2026-05-07" alt="Contributors Open Design" />
+<a href="https://github.com/agentik-os/AgentikDesign/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=agentik-os/AgentikDesign&cache_bust=2026-05-07" alt="Contributors Open Design" />
 </a>
 
-Если вы только что отправили свой первый PR — добро пожаловать. Метка [`good-first-issue`/`help-wanted`](https://github.com/nexu-io/open-design/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22%2C%22help+wanted%22) — хорошая точка входа.
+Если вы только что отправили свой первый PR — добро пожаловать. Метка [`good-first-issue`/`help-wanted`](https://github.com/agentik-os/AgentikDesign/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22%2C%22help+wanted%22) — хорошая точка входа.
 
 ## Активность репозитория
 
@@ -735,11 +737,11 @@ SVG выше ежедневно пересобирается workflow [`.github/
 
 ## История звёзд
 
-<a href="https://star-history.com/#nexu-io/open-design&Date">
+<a href="https://star-history.com/#agentik-os/AgentikDesign&Date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=nexu-io/open-design&type=Date&theme=dark&cache_bust=2026-05-07" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=nexu-io/open-design&type=Date&cache_bust=2026-05-07" />
-    <img alt="История звёзд Open Design" src="https://api.star-history.com/svg?repos=nexu-io/open-design&type=Date&cache_bust=2026-05-07" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&theme=dark&cache_bust=2026-05-07" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&cache_bust=2026-05-07" />
+    <img alt="История звёзд Open Design" src="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&cache_bust=2026-05-07" />
   </picture>
 </a>
 
@@ -754,3 +756,7 @@ SVG выше ежедневно пересобирается workflow [`.github/
 ## Лицензия
 
 Apache-2.0. Встроенный `skills/guizang-ppt/` сохраняет свою исходную [LICENSE](skills/guizang-ppt/LICENSE) (MIT) и авторскую атрибуцию [op7418](https://github.com/op7418). Встроенный `skills/html-ppt/` сохраняет свою исходную [LICENSE](skills/html-ppt/LICENSE) (MIT) и авторскую атрибуцию [lewislulu](https://github.com/lewislulu).
+
+## Credits / Upstream
+
+**Agentik Design** is a fork of [Open Design](https://github.com/nexu-io/open-design) by [nexu-io](https://github.com/nexu-io). Distributed under the Apache License 2.0. See [NOTICE.md](NOTICE.md) and the [LICENSE](LICENSE) file.

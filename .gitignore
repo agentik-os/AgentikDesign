@@ -59,3 +59,6 @@ specs/change/active
 # Convex — keep stubs committed so Vercel build doesn't fail before codegen
 # convex/_generated/
 .vercel
+.flowaudit/
+.audit/
+.debugaudit/

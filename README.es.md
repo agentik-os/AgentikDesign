@@ -1,4 +1,6 @@
-# Open Design
+# Agentik Design
+
+> **Maintained by [Agentik OS](https://agentik-os.com).** Forked from [nexu-io/open-design](https://github.com/nexu-io/open-design) (Apache-2.0). See [NOTICE.md](NOTICE.md) for full attribution.
 
 > **La alternativa open source a [Claude Design][cd].** Local-first, desplegable en web, BYOK en cada capa: **16 CLI de coding agents** detectadas automáticamente en tu `PATH` (Claude Code, Codex, Devin for Terminal, Cursor Agent, Gemini CLI, OpenCode, Qwen, Qoder CLI, GitHub Copilot CLI, Hermes, Kimi, Pi, Kiro, Kilo, Mistral Vibe, DeepSeek TUI) se convierten en el motor de diseño, impulsadas por **31 Skills componibles** y **72 Design Systems de nivel marca**. ¿No tienes una CLI? Un proxy BYOK compatible con OpenAI ejecuta el mismo bucle sin el spawn local.
 
@@ -7,17 +9,17 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/nexu-io/open-design/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=ffd700&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=2ecc71&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/issues"><img alt="Issues" src="https://img.shields.io/github/issues/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=ff6b6b&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/pulls"><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=9b59b6&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=3498db&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/commits/main"><img alt="Commit activity" src="https://img.shields.io/github/commit-activity/m/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=e67e22&logo=git&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=8e44ad&logo=git&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=ffd700&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=2ecc71&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/issues"><img alt="Issues" src="https://img.shields.io/github/issues/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=ff6b6b&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/pulls"><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=9b59b6&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=3498db&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/commits/main"><img alt="Commit activity" src="https://img.shields.io/github/commit-activity/m/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=e67e22&logo=git&logoColor=white" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/agentik-os/AgentikDesign?style=for-the-badge&labelColor=0d1117&color=8e44ad&logo=git&logoColor=white" /></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/nexu-io/open-design/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/nexu-io/open-design?style=flat-square&color=blueviolet&label=release&include_prereleases" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/agentik-os/AgentikDesign?style=flat-square&color=blueviolet&label=release&include_prereleases" /></a>
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat-square" /></a>
   <a href="#coding-agents-soportados"><img alt="Agents" src="https://img.shields.io/badge/agents-16%20CLIs%20%2B%20BYOK%20proxy-black?style=flat-square" /></a>
   <a href="#design-systems"><img alt="Design systems" src="https://img.shields.io/badge/design%20systems-72-orange?style=flat-square" /></a>
@@ -301,7 +303,7 @@ Cada capa es componible. Cada capa es un archivo que puedes editar. Lee [`apps/w
 ## Quickstart
 
 ```bash
-git clone https://github.com/nexu-io/open-design.git
+git clone https://github.com/agentik-os/AgentikDesign.git
 cd open-design
 corepack enable
 corepack pnpm --version   # should print 10.33.2
@@ -758,10 +760,10 @@ Esta es una implementación temprana: el bucle cerrado (detect → pick skill + 
 ## Danos una estrella
 
 <p align="center">
-  <a href="https://github.com/nexu-io/open-design"><img src="docs/assets/star-us.png" alt="Star Open Design on GitHub — github.com/nexu-io/open-design" width="100%" /></a>
+  <a href="https://github.com/agentik-os/AgentikDesign"><img src="docs/assets/star-us.png" alt="Star Open Design on GitHub — github.com/agentik-os/AgentikDesign" width="100%" /></a>
 </p>
 
-Si esto te ahorró treinta minutos, dale una ★. Las estrellas no pagan la renta, pero le dicen al próximo diseñador, agente y contributor que este experimento merece atención. Un clic, tres segundos, señal real: [github.com/nexu-io/open-design](https://github.com/nexu-io/open-design).
+Si esto te ahorró treinta minutos, dale una ★. Las estrellas no pagan la renta, pero le dicen al próximo diseñador, agente y contributor que este experimento merece atención. Un clic, tres segundos, señal real: [github.com/agentik-os/AgentikDesign](https://github.com/agentik-os/AgentikDesign).
 
 ## Contribuir
 
@@ -777,11 +779,11 @@ Walkthrough completo, estándar de merge, code style y lo que no aceptamos → [
 
 Gracias a todas las personas que han ayudado a mover Open Design hacia adelante: con código, docs, feedback, nuevas skills, nuevos design systems o incluso un issue preciso. Toda contribución real cuenta, y el muro de abajo es la forma más simple de decirlo en voz alta.
 
-<a href="https://github.com/nexu-io/open-design/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=nexu-io/open-design&cache_bust=2026-05-07" alt="Contribuidores de Open Design" />
+<a href="https://github.com/agentik-os/AgentikDesign/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=agentik-os/AgentikDesign&cache_bust=2026-05-07" alt="Contribuidores de Open Design" />
 </a>
 
-Si ya enviaste tu primer PR, bienvenido. La etiqueta [`good-first-issue`](https://github.com/nexu-io/open-design/labels/good-first-issue) es el punto de entrada.
+Si ya enviaste tu primer PR, bienvenido. La etiqueta [`good-first-issue`](https://github.com/agentik-os/AgentikDesign/labels/good-first-issue) es el punto de entrada.
 
 ## Actividad del repositorio
 
@@ -793,11 +795,11 @@ El SVG anterior se regenera diariamente mediante [`.github/workflows/metrics.yml
 
 ## Historial de estrellas
 
-<a href="https://star-history.com/#nexu-io/open-design&Date">
+<a href="https://star-history.com/#agentik-os/AgentikDesign&Date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=nexu-io/open-design&type=Date&theme=dark&cache_bust=2026-05-07" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=nexu-io/open-design&type=Date&cache_bust=2026-05-07" />
-    <img alt="Historial de estrellas de Open Design" src="https://api.star-history.com/svg?repos=nexu-io/open-design&type=Date&cache_bust=2026-05-07" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&theme=dark&cache_bust=2026-05-07" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&cache_bust=2026-05-07" />
+    <img alt="Historial de estrellas de Open Design" src="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&cache_bust=2026-05-07" />
   </picture>
 </a>
 
@@ -812,3 +814,7 @@ El flujo magazine / horizontal-swipe deck bajo [`skills/guizang-ppt/`](skills/gu
 ## Licencia
 
 Apache-2.0. El bundle `skills/guizang-ppt/` conserva su [LICENSE](skills/guizang-ppt/LICENSE) original (MIT) y la atribución de autoría a [op7418](https://github.com/op7418). El bundle `skills/html-ppt/` conserva su [LICENSE](skills/html-ppt/LICENSE) original (MIT) y la atribución de autoría a [lewislulu](https://github.com/lewislulu).
+
+## Credits / Upstream
+
+**Agentik Design** is a fork of [Open Design](https://github.com/nexu-io/open-design) by [nexu-io](https://github.com/nexu-io). Distributed under the Apache License 2.0. See [NOTICE.md](NOTICE.md) and the [LICENSE](LICENSE) file.

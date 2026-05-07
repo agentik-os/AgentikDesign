@@ -1,0 +1,14 @@
+title = "Agentik Design — gitleaks config"
+
+# Inherit gitleaks default ruleset
+[extend]
+useDefault = true
+
+# Allowlist test fixtures with hardcoded fake credentials.
+# These are mock strings used to verify config writer/reader round-trip behavior,
+# not real API keys. Pattern is inherited from upstream nexu-io/open-design.
+[allowlist]
+description = "Test fixtures with hardcoded mock secrets"
+paths = [
+  '''apps/daemon/tests/composio-config\.test\.ts''',
+]

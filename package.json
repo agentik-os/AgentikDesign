@@ -1,13 +1,23 @@
 {
-  "name": "open-design",
+  "name": "agentik-design",
   "version": "0.4.1",
   "private": true,
   "packageManager": "pnpm@10.33.2",
   "type": "module",
-  "description": "Local-first design product: detects your installed code-agent CLI, runs design skills + design systems, streams artifacts into a sandboxed preview.",
+  "description": "Agentik Design — open-source design product by Agentik OS. Forked from nexu-io/open-design. Local-first, BYOK, deployable to Vercel. Powered by Convex + Clerk.",
   "license": "Apache-2.0",
+  "author": "Agentik OS <x@agentik-os.com>",
+  "homepage": "https://github.com/agentik-os/AgentikDesign",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agentik-os/AgentikDesign.git"
+  },
+  "bugs": {
+    "url": "https://github.com/agentik-os/AgentikDesign/issues"
+  },
   "bin": {
-    "od": "./apps/daemon/dist/cli.js"
+    "od": "./apps/daemon/dist/cli.js",
+    "agentik-design": "./apps/daemon/dist/cli.js"
   },
   "scripts": {
     "postinstall": "node ./scripts/postinstall.mjs",
@@ -21,8 +31,8 @@
     "typecheck": "pnpm -r --workspace-concurrency=1 --if-present run typecheck && tsc -p scripts/tsconfig.json --noEmit"
   },
   "devDependencies": {
-    "@open-design/tools-dev": "workspace:*",
-    "@open-design/tools-pack": "workspace:*",
+    "@agentik-design/tools-dev": "workspace:*",
+    "@agentik-design/tools-pack": "workspace:*",
     "@types/node": "^20.17.10",
     "tsx": "4.21.0",
     "typescript": "^5.6.3"

@@ -1,5 +1,7 @@
 # Quickstart
 
+> **Agentik Design** — maintained by [Agentik OS](https://agentik-os.com). Forked from [agentik-os/AgentikDesign](https://github.com/agentik-os/AgentikDesign) (Apache-2.0). See [NOTICE.md](NOTICE.md).
+
 <p align="center"><b>English</b> · <a href="QUICKSTART.pt-BR.md">Português (Brasil)</a> · <a href="QUICKSTART.de.md">Deutsch</a> · <a href="QUICKSTART.fr.md">Français</a> · <a href="QUICKSTART.ja-JP.md">日本語</a> · <a href="QUICKSTART.zh-CN.md">简体中文</a></p>
 
 Run the full product locally.
