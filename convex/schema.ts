@@ -8,5 +8,6 @@ export default defineSchema({
     name: v.optional(v.string()),
     imageUrl: v.optional(v.string()),
     createdAt: v.number(),
+    updatedAt: v.optional(v.number()),
   }).index("byClerkId", ["clerkId"]),
 });

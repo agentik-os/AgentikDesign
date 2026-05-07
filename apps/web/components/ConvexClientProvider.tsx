@@ -7,14 +7,21 @@ import { useAuth } from "@clerk/nextjs";
 
 const convexUrl = process.env.NEXT_PUBLIC_CONVEX_URL;
 
-const convex = convexUrl
-  ? new ConvexReactClient(convexUrl)
-  : null;
+if (!convexUrl && process.env.NODE_ENV === "production") {
+  throw new Error(
+    "NEXT_PUBLIC_CONVEX_URL is required in production. Set it on the deploy environment.",
+  );
+}
+
+const convex = convexUrl ? new ConvexReactClient(convexUrl) : null;
 
 export function ConvexClientProvider({ children }: { children: ReactNode }) {
   if (!convex) {
-    // No Convex URL configured — render children without provider so the
-    // build/dev experience still works (e.g. landing page only).
+    if (typeof window !== "undefined") {
+      console.warn(
+        "[ConvexClientProvider] NEXT_PUBLIC_CONVEX_URL not set — Convex hooks will not work.",
+      );
+    }
     return <>{children}</>;
   }
   return (
