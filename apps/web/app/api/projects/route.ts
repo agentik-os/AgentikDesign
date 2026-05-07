@@ -6,15 +6,20 @@
  */
 import { fetchMutation, fetchQuery } from "convex/nextjs";
 import { api } from "../../../../../convex/_generated/api";
-import { getConvexAuth, jsonError } from "../_lib/convex-auth";
+import {
+  getConvexAuth,
+  getOptionalConvexAuth,
+  jsonError,
+} from "../_lib/convex-auth";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export async function GET(request: Request) {
-  const auth = await getConvexAuth();
-  if (auth instanceof Response) return auth;
-
+  // Signed-out users get an empty list 200 — the dashboard shell calls this
+  // before sign-in completes during hydration; 401 there triggers a console
+  // error in production.
+  const auth = await getOptionalConvexAuth();
   const url = new URL(request.url);
   const status = url.searchParams.get("status") as
     | "active"
@@ -22,15 +27,17 @@ export async function GET(request: Request) {
     | "deleted"
     | null;
 
+  if (!auth) return Response.json({ projects: [] });
+
   try {
     const data = await fetchQuery(
       api.projects.list,
       status ? { status } : {},
       { token: auth.token },
     );
-    return Response.json({ projects: data });
-  } catch (err) {
-    return jsonError(String((err as Error)?.message ?? err));
+    return Response.json({ projects: data ?? [] });
+  } catch {
+    return Response.json({ projects: [] });
   }
 }
 

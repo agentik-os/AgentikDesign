@@ -10,20 +10,26 @@
  */
 import { fetchMutation, fetchQuery } from "convex/nextjs";
 import { api } from "../../../../../convex/_generated/api";
-import { getConvexAuth, jsonError } from "../_lib/convex-auth";
+import {
+  getConvexAuth,
+  getOptionalConvexAuth,
+  jsonError,
+} from "../_lib/convex-auth";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  const auth = await getConvexAuth();
-  if (auth instanceof Response) return auth;
+  // Soft-auth catalog read — signed-out users get an empty config so the
+  // app shell renders without an auth round-trip.
+  const auth = await getOptionalConvexAuth();
+  if (!auth) return Response.json({ config: [] });
 
   try {
     const rows = await fetchQuery(api.appConfig.list, {}, { token: auth.token });
-    return Response.json({ config: rows });
-  } catch (err) {
-    return jsonError(String((err as Error)?.message ?? err));
+    return Response.json({ config: rows ?? [] });
+  } catch {
+    return Response.json({ config: [] });
   }
 }
 
