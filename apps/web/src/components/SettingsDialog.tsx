@@ -1896,7 +1896,7 @@ function MediaProvidersSection({
 // Important: every snippet uses absolute paths to the daemon's current
 // Node-compatible runtime and built cli.js, fetched at runtime. macOS
 // and Linux ship a system /usr/bin/od (octal-dump) that shadows any
-// `od` we might add to PATH, and most Open Design users run from
+// `od` we might add to PATH, and most Agentik Design users run from
 // source where `od` is not installed globally. The installer panel
 // must NOT reference bare `od`.
 type McpClientId =
@@ -2228,7 +2228,7 @@ function IntegrationsSection() {
           <h3>MCP server</h3>
           <p className="hint">
             Lets a coding agent in another repo (Claude Code, Cursor,
-            VS Code, Antigravity, Zed, Windsurf) read your Open Design
+            VS Code, Antigravity, Zed, Windsurf) read your Agentik Design
             projects. Use it to pull a design into your app without
             exporting a zip first.
           </p>
@@ -2242,7 +2242,7 @@ function IntegrationsSection() {
             style={{ marginBottom: 14, color: 'var(--danger-fg, #f88)' }}
           >
             Couldn&rsquo;t reach the local daemon to resolve install paths
-            ({infoError}). Make sure Open Design is running, then reopen this
+            ({infoError}). Make sure Agentik Design is running, then reopen this
             panel.
           </div>
         ) : null}
@@ -2462,7 +2462,7 @@ function IntegrationsSection() {
               CSS variable, component, and font it references.
             </li>
             <li>
-              Default to the project and file you have open in Open Design,
+              Default to the project and file you have open in Agentik Design,
               so you can say &ldquo;build this in my app&rdquo; without
               re-stating which design.
             </li>
@@ -2477,8 +2477,8 @@ function IntegrationsSection() {
             lineHeight: 1.5,
           }}
         >
-          Open Design must be running for MCP tool calls to succeed. If
-          you started your coding agent before opening Open Design,
+          Agentik Design must be running for MCP tool calls to succeed. If
+          you started your coding agent before opening Agentik Design,
           restart the agent so it can reach the live daemon.
         </p>
       </div>
