@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import type { ReactNode } from 'react';
-import { ClerkProvider } from '@clerk/nextjs';
+import { ClerkProvider, SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs';
 import { I18nProvider } from '../src/i18n';
 import { ConvexClientProvider } from '../components/ConvexClientProvider';
 import '../src/index.css';
@@ -42,6 +42,27 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <body suppressHydrationWarning>
           <ConvexClientProvider>
             <I18nProvider>{children}</I18nProvider>
+            {/* BYOK Phase 1: tiny auth widget so users can sign in/out without
+                touching the SPA shell. Inside ConvexClientProvider so Clerk's
+                auth state stays consistent with Convex's useAuth() reads. */}
+            <div
+              style={{
+                position: 'fixed',
+                top: 12,
+                right: 12,
+                zIndex: 50,
+                display: 'flex',
+                alignItems: 'center',
+                gap: 8,
+              }}
+            >
+              <SignedOut>
+                <SignInButton mode='modal' />
+              </SignedOut>
+              <SignedIn>
+                <UserButton afterSignOutUrl='/' />
+              </SignedIn>
+            </div>
           </ConvexClientProvider>
         </body>
       </html>
