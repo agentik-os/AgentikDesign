@@ -139,4 +139,41 @@ export default defineSchema({
   })
     .index("bySlug", ["slug"])
     .index("byCategory", ["category"]),
+
+  // 9) CLI device-auth requests — device-code OAuth bootstrap for the
+  // local CLI agent. A request lives a few minutes; once approved by an
+  // authenticated user it is consumed by `pollDeviceRequest` which
+  // returns the issued API token.
+  cliAuthRequests: defineTable({
+    deviceCode: v.string(), // long random — caller secret, used by CLI to poll
+    userCode: v.string(), // short alphanumeric — shown to the human in the browser flow
+    status: v.union(
+      v.literal("pending"),
+      v.literal("approved"),
+      v.literal("expired"),
+      v.literal("consumed"),
+    ),
+    userId: v.optional(v.string()), // clerk subject set on approval
+    issuedToken: v.optional(v.string()), // plaintext token returned once on poll
+    tokenId: v.optional(v.id("apiTokens")),
+    createdAt: v.number(),
+    expiresAt: v.number(),
+  })
+    .index("byDeviceCode", ["deviceCode"])
+    .index("byUserCode", ["userCode"]),
+
+  // 10) API tokens — long-lived bearer tokens for the local CLI agent
+  // and other automation. We store the raw token string (server-only,
+  // never exposed in user-facing queries). Pattern mirrors
+  // `providerCredentials.accessToken`.
+  apiTokens: defineTable({
+    userId: v.string(),
+    token: v.string(),
+    name: v.optional(v.string()), // human-readable label e.g. "claude-code-cli"
+    createdAt: v.number(),
+    lastUsedAt: v.optional(v.number()),
+    revokedAt: v.optional(v.number()),
+  })
+    .index("byUserId", ["userId"])
+    .index("byToken", ["token"]),
 });

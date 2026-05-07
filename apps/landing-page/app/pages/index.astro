@@ -5,9 +5,8 @@ import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { heroImage } from '../image-assets';
 
-const title = 'Open Design — Design with the agent already on your laptop.';
-const description =
-  'The open-source alternative to Claude Design. Your existing coding agent — Claude · Codex · Cursor · Gemini · OpenCode · Qwen — becomes the design engine, driven by 31 composable skills and 72 brand-grade design systems.';
+const title = 'Agentik Design — Design at the speed of thought.';
+const description = 'Design at the speed of thought.';
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
 const pageHtml = renderToStaticMarkup(createElement(Page));
 ---
@@ -23,7 +22,7 @@ const pageHtml = renderToStaticMarkup(createElement(Page));
     <link rel="canonical" href={canonical} />
 
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Open Design" />
+    <meta property="og:site_name" content="Agentik Design" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
@@ -36,7 +35,12 @@ const pageHtml = renderToStaticMarkup(createElement(Page));
   </head>
   <body>
     <Fragment set:html={pageHtml} />
-    <script is:inline>
+    <!--
+      Previous release: inline scripts hydrated nav, GitHub stars, version
+      badges and contributor marquee. The minimalist hero ships none of those
+      DOM hooks, so all enhancement scripts have been removed.
+    -->
+    <script is:inline data-removed-on-refactor>
       (() => {
         const formatStars = (count) => {
           if (!Number.isFinite(count) || count <= 0) return '0';

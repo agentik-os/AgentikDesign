@@ -18,6 +18,9 @@ import type * as templates from "../templates.js";
 import type * as providerCredentials from "../providerCredentials.js";
 import type * as appConfig from "../appConfig.js";
 import type * as catalog from "../catalog.js";
+import type * as account from "../account.js";
+import type * as billing from "../billing.js";
+import type * as cliAuth from "../cliAuth.js";
 
 declare const fullApi: ApiFromModules<{
   users: typeof users;
@@ -28,6 +31,9 @@ declare const fullApi: ApiFromModules<{
   providerCredentials: typeof providerCredentials;
   appConfig: typeof appConfig;
   catalog: typeof catalog;
+  account: typeof account;
+  billing: typeof billing;
+  cliAuth: typeof cliAuth;
 }>;
 
 export declare const api: FilterApi<typeof fullApi, FunctionReference<any, "public">>;

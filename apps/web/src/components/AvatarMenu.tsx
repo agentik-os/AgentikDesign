@@ -1,4 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from '@clerk/nextjs';
 import { useT } from '../i18n';
 import { AgentIcon } from './AgentIcon';
 import { Icon } from './Icon';
@@ -93,6 +99,39 @@ export function AvatarMenu({
       </button>
       {open ? (
         <div className="avatar-popover" role="menu">
+          <div
+            className="avatar-popover-identity"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: 8,
+              padding: '8px 10px',
+              borderBottom: '1px solid var(--border-soft)',
+            }}
+          >
+            <span className="avatar-popover-identity-label">
+              {t('avatar.title')}
+            </span>
+            <SignedIn>
+              <UserButton afterSignOutUrl="/" />
+            </SignedIn>
+            <SignedOut>
+              <SignInButton mode="modal" fallbackRedirectUrl="/">
+                <button
+                  type="button"
+                  className="avatar-item"
+                  style={{
+                    padding: '4px 10px',
+                    borderRadius: 999,
+                    border: '1px solid var(--border-soft)',
+                  }}
+                >
+                  Sign in
+                </button>
+              </SignInButton>
+            </SignedOut>
+          </div>
           <div className="avatar-popover-head">
             <span className="who">
               {config.mode === 'daemon'

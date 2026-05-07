@@ -191,12 +191,37 @@ export async function daemonIsLive(): Promise<boolean> {
   }
 }
 
+// Defensive normalization: the cloud `/api/connectors` route currently
+// returns a slim catalog (no `tools` field) while the contract requires
+// `tools: ConnectorToolDetail[]`. Consumers (EntryView) call
+// `connector.tools.length`, which crashes when the field is missing on a
+// production response. Normalize at the boundary so every downstream
+// reader sees a well-formed shape — independent of which backend served it.
+function normalizeConnector(raw: Partial<ConnectorDetail> | null | undefined): ConnectorDetail {
+  const safe = raw ?? {};
+  return {
+    id: safe.id ?? '',
+    name: safe.name ?? '',
+    provider: safe.provider ?? '',
+    category: safe.category ?? '',
+    description: safe.description,
+    status: safe.status ?? 'disconnected',
+    accountLabel: safe.accountLabel,
+    tools: Array.isArray(safe.tools) ? safe.tools : [],
+    featuredToolNames: safe.featuredToolNames,
+    minimumApproval: safe.minimumApproval,
+    lastError: safe.lastError,
+    auth: safe.auth,
+  } as ConnectorDetail;
+}
+
 export async function fetchConnectors(): Promise<ConnectorDetail[]> {
   try {
     const resp = await fetch('/api/connectors');
     if (!resp.ok) return [];
-    const json = (await resp.json()) as ConnectorListResponse;
-    return json.connectors ?? [];
+    const json = (await resp.json()) as Partial<ConnectorListResponse>;
+    const list = Array.isArray(json?.connectors) ? json.connectors : [];
+    return list.map(normalizeConnector);
   } catch {
     return [];
   }
@@ -229,8 +254,9 @@ export async function fetchConnectorDiscovery(options: { refresh?: boolean } = {
       const params = options.refresh ? '?refresh=true' : '';
       const resp = await fetch(`/api/connectors/discovery${params}`);
       if (!resp.ok) return [];
-      const json = (await resp.json()) as ConnectorDiscoveryResponse;
-      const connectors = json.connectors ?? [];
+      const json = (await resp.json()) as Partial<ConnectorDiscoveryResponse>;
+      const list = Array.isArray(json?.connectors) ? json.connectors : [];
+      const connectors = list.map(normalizeConnector);
       connectorDiscoveryCache = connectors;
       return connectors;
     } catch {

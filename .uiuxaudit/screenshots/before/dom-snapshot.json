@@ -1,0 +1,223 @@
+{
+  "title": "Open Design",
+  "themeAttr": null,
+  "computedBg": "rgb(250, 249, 247)",
+  "computedColor": "rgb(26, 25, 22)",
+  "fontFamily": "-apple-system, BlinkMacSystemFont, Inter, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+  "bodyHTML": "<div hidden=\"\"><!--$--><!--/$--></div><!--$--><!--/$--><div class=\"entry-shell\"><header class=\"app-chrome-header\"><div class=\"app-chrome-traffic-space\" aria-hidden=\"true\"></div><div class=\"app-chrome-brand\" aria-label=\"Open Design\"><span class=\"app-chrome-mark\" aria-hidden=\"true\"><img alt=\"\" class=\"brand-mark-img\" draggable=\"false\" src=\"/app-icon.svg\"></span><span class=\"app-chrome-name\">Open Design</span></div><div class=\"app-chrome-drag\" aria-hidden=\"true\"></div><div class=\"app-chrome-actions\"><div class=\"avatar-menu\"><button type=\"button\" class=\"settings-icon-btn\" title=\"Settings\" aria-label=\"Open settings\" aria-haspopup=\"menu\" aria-expanded=\"false\"><svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"3\"></circle><path d=\"M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 0 1-2.82 2.83l-.06-.07a1.7 1.7 0 0 0-1.88-.33 1.7 1.7 0 0 0-1.04 1.56V21a2 2 0 0 1-4 0v-.1A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.82l.07-.06a1.7 1.7 0 0 0 .33-1.88 1.7 1.7 0 0 0-1.56-1.04H3a2 2 0 0 1 0-4h.1a1.7 1.7 0 0 0 1.56-1.04 1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.07A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1.04-1.56V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1.04 1.56 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.07.06a1.7 1.7 0 0 0-.33 1.87V9a1.7 1.7 0 0 0 1.56 1.04H21a2 2 0 0 1 0 4h-.1a1.7 1.7 0 0 0-1.56 1.04Z\"></path></svg></button></div></div></header><div class=\"entry has-pet-rail\" style=\"grid-template-columns: 380px 1fr auto;\"><aside class=\"entry-side\" style=\"width: 380px;\"><div class=\"newproj\" data-testid=\"new-project-panel\"><div class=\"newproj-tabs-shell can-right\"><button type=\"button\" class=\"newproj-tabs-arrow left hidden\" aria-label=\"Scroll project types left\" tabindex=\"-1\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m15 18-6-6 6-6\"></path></svg></button><div class=\"newproj-tabs\" role=\"tablist\"><button role=\"tab\" data-testid=\"new-project-tab-prototype\" aria-selected=\"true\" class=\"newproj-tab active\">Prototype</button><button role=\"tab\" data-testid=\"new-project-tab-live-artifact\" aria-selected=\"false\" class=\"newproj-tab \">Live artifact</button><button role=\"tab\" data-testid=\"new-project-tab-deck\" aria-selected=\"false\" class=\"newproj-tab \">Slide deck</button><button role=\"tab\" data-testid=\"new-project-tab-template\" aria-selected=\"false\" class=\"newproj-tab \">From template</button><button role=\"tab\" data-testid=\"new-project-tab-image\" aria-selected=\"false\" class=\"newproj-tab \">Image</button><button role=\"tab\" data-testid=\"new-project-tab-video\" aria-selected=\"false\" class=\"newproj-tab \">Video</button><button role=\"tab\" data-testid=\"new-project-tab-audio\" aria-selected=\"false\" class=\"newproj-tab \">Audio</button><button role=\"tab\" dat",
+  "rootInner": "<html lang=\"en\" dir=\"ltr\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel=\"stylesheet\" href=\"/_next/static/chunks/0i83.cw4av296.css\" data-precedence=\"next\"><link rel=\"preload\" as=\"script\" fetchpriority=\"low\" href=\"/_next/static/chunks/014psx4~6~xyl.js\"><script src=\"/_next/static/chunks/0~3h5hrxvq3ep.js\" async=\"\"></script><script src=\"/_next/static/chunks/10gvek3d6kejy.js\" async=\"\"></script><script src=\"/_next/static/chunks/0o7w6.tblaitv.js\" async=\"\"></script><script src=\"/_next/static/chunks/15qzvvzhjo520.js\" async=\"\"></script><script src=\"/_next/static/chunks/turbopack-13odvy5fppsav.js\" async=\"\"></script><script src=\"/_next/static/chunks/0e.hbz.suyjqx.js\" async=\"\"></script><script src=\"/_next/static/chunks/0rtj3uzk2ev-9.js\" async=\"",
+  "signInBtn": [
+    {
+      "text": "",
+      "html": "<button type=\"button\" class=\"settings-icon-btn\" title=\"Settings\" aria-label=\"Open settings\" aria-haspopup=\"menu\" aria-expanded=\"false\"><svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true"
+    },
+    {
+      "text": "",
+      "html": "<button type=\"button\" class=\"newproj-tabs-arrow left hidden\" aria-label=\"Scroll project types left\" tabindex=\"-1\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><pa"
+    },
+    {
+      "text": "Prototype",
+      "html": "<button role=\"tab\" data-testid=\"new-project-tab-prototype\" aria-selected=\"true\" class=\"newproj-tab active\">Prototype</button>"
+    },
+    {
+      "text": "Live artifact",
+      "html": "<button role=\"tab\" data-testid=\"new-project-tab-live-artifact\" aria-selected=\"false\" class=\"newproj-tab \">Live artifact</button>"
+    },
+    {
+      "text": "Slide deck",
+      "html": "<button role=\"tab\" data-testid=\"new-project-tab-deck\" aria-selected=\"false\" class=\"newproj-tab \">Slide deck</button>"
+    },
+    {
+      "text": "From template",
+      "html": "<button role=\"tab\" data-testid=\"new-project-tab-template\" aria-selected=\"false\" class=\"newproj-tab \">From template</button>"
+    },
+    {
+      "text": "Image",
+      "html": "<button role=\"tab\" data-testid=\"new-project-tab-image\" aria-selected=\"false\" class=\"newproj-tab \">Image</button>"
+    },
+    {
+      "text": "Video",
+      "html": "<button role=\"tab\" data-testid=\"new-project-tab-video\" aria-selected=\"false\" class=\"newproj-tab \">Video</button>"
+    },
+    {
+      "text": "Audio",
+      "html": "<button role=\"tab\" data-testid=\"new-project-tab-audio\" aria-selected=\"false\" class=\"newproj-tab \">Audio</button>"
+    },
+    {
+      "text": "Other",
+      "html": "<button role=\"tab\" data-testid=\"new-project-tab-other\" aria-selected=\"false\" class=\"newproj-tab \">Other</button>"
+    },
+    {
+      "text": "",
+      "html": "<button type=\"button\" class=\"newproj-tabs-arrow right\" aria-label=\"Scroll project types right\" tabindex=\"0\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\""
+    },
+    {
+      "text": "None — freeform\nNo system tokens, choose your own palette",
+      "html": "<button type=\"button\" data-testid=\"design-system-trigger\" class=\"ds-picker-trigger empty\" aria-haspopup=\"listbox\" aria-expanded=\"false\"><span class=\"ds-avatar ds-avatar-none\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\"><circle cx=\"12\" cy=\"12\" r=\"9\" fill=\"none\" stroke=\"currentC"
+    },
+    {
+      "text": "Wireframe",
+      "html": "<button type=\"button\" class=\"fidelity-card\" aria-pressed=\"false\"><span class=\"fidelity-thumb fidelity-thumb-wireframe\" aria-hidden=\"true\"><svg viewBox=\"0 0 120 70\" width=\"100%\" height=\"100%\" aria-hidden=\"true\"><rect x=\"6\" y=\"8\" width=\"46\" height=\"6\" rx=\"2\" fill=\"#d8d4cb\"></rect><rect x=\"6\" y=\"20\" wi"
+    },
+    {
+      "text": "High fidelity",
+      "html": "<button type=\"button\" class=\"fidelity-card active\" aria-pressed=\"true\"><span class=\"fidelity-thumb fidelity-thumb-high-fidelity\" aria-hidden=\"true\"><svg viewBox=\"0 0 120 70\" width=\"100%\" height=\"100%\" aria-hidden=\"true\"><rect x=\"6\" y=\"8\" width=\"34\" height=\"6\" rx=\"2\" fill=\"#1a1916\"></rect><rect x=\"6\""
+    },
+    {
+      "text": "Create",
+      "html": "<button class=\"primary newproj-create\" data-testid=\"create-project\"><svg width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 5v14\"></path><path d=\"M5 12h14\"></"
+    },
+    {
+      "text": "Import Claude Design ZIP",
+      "html": "<button type=\"button\" class=\"ghost newproj-import\" title=\"Import a Claude Design .zip export\"><svg width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M21 15v4a2 2"
+    },
+    {
+      "text": "🐾\nAdopt a pet",
+      "html": "<button type=\"button\" class=\"foot-pill pet-pill pet-pill-fresh\" title=\"Adopt a pet\"><span class=\"pet-pill-glyph\" aria-hidden=\"true\">🐾</span><span>Adopt a pet</span><span class=\"pet-pill-dot\" aria-hidden=\"true\"></span></button>"
+    },
+    {
+      "text": "Local CLI\n·\nno agent selected",
+      "html": "<button type=\"button\" class=\"foot-pill\" title=\"Configure execution mode\"><svg width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"3\"></circle><pa"
+    },
+    {
+      "text": "English",
+      "html": "<button type=\"button\" class=\"foot-pill lang-pill\" aria-haspopup=\"menu\" aria-expanded=\"false\" title=\"English\"><svg width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path "
+    },
+    {
+      "text": "",
+      "html": "<button type=\"button\" aria-label=\"Resize sidebar\" class=\"entry-side-resizer\"></button>"
+    },
+    {
+      "text": "Designs",
+      "html": "<button role=\"tab\" data-testid=\"entry-tab-designs\" aria-selected=\"true\" class=\"entry-tab active\">Designs</button>"
+    },
+    {
+      "text": "Examples",
+      "html": "<button role=\"tab\" data-testid=\"entry-tab-examples\" aria-selected=\"false\" class=\"entry-tab \">Examples</button>"
+    },
+    {
+      "text": "Design systems",
+      "html": "<button role=\"tab\" data-testid=\"entry-tab-design-systems\" aria-selected=\"false\" class=\"entry-tab \">Design systems</button>"
+    },
+    {
+      "text": "Connectors",
+      "html": "<button role=\"tab\" data-testid=\"entry-tab-connectors\" aria-selected=\"false\" class=\"entry-tab \">Connectors</button>"
+    },
+    {
+      "text": "Image templates",
+      "html": "<button role=\"tab\" data-testid=\"entry-tab-image-templates\" aria-selected=\"false\" class=\"entry-tab \">Image templates</button>"
+    },
+    {
+      "text": "Video templates",
+      "html": "<button role=\"tab\" data-testid=\"entry-tab-video-templates\" aria-selected=\"false\" class=\"entry-tab \">Video templates</button>"
+    },
+    {
+      "text": "Recent",
+      "html": "<button aria-pressed=\"true\" class=\"active\">Recent</button>"
+    },
+    {
+      "text": "Your designs",
+      "html": "<button aria-pressed=\"false\" class=\"\">Your designs</button>"
+    },
+    {
+      "text": "",
+      "html": "<button aria-pressed=\"true\" class=\"active\" title=\"Grid view\" data-testid=\"designs-view-grid\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"3\" widt"
+    },
+    {
+      "text": "",
+      "html": "<button aria-pressed=\"false\" class=\"\" title=\"Board view\" data-testid=\"designs-view-kanban\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"4\" width="
+    },
+    {
+      "text": "",
+      "html": "<button type=\"button\" class=\"pet-rail-collapse\" title=\"Collapse pet picker\" aria-label=\"Collapse pet picker\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path "
+    },
+    {
+      "text": "",
+      "html": "<button type=\"button\" class=\"pet-rail-collapse\" title=\"Hide pet picker\" aria-label=\"Hide pet picker\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M18 6"
+    },
+    {
+      "text": "🦄\nBuddy\nYour own — name, glyph, color.",
+      "html": "<button type=\"button\" class=\"pet-rail-item custom\" style=\"--pet-accent: #c96442;\"><span class=\"pet-rail-item-glyph\" aria-hidden=\"true\"><span aria-hidden=\"true\" style=\"font-size: 24px; width: 28px; height: 28px; line-height: 1;\">🦄</span></span><span class=\"pet-rail-item-meta\"><span class=\"pet-rail-i"
+    },
+    {
+      "text": "Customize…",
+      "html": "<button type=\"button\" class=\"pet-rail-customize\"><svg width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m12 3 1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5z\">"
+    },
+    {
+      "text": "🐾\nAdopt a pet\nA tiny floating companion that hangs out with you.\nPick one",
+      "html": "<button type=\"button\" class=\"welcome-pet-teaser\"><span class=\"welcome-pet-glyph\" aria-hidden=\"true\">🐾</span><span class=\"welcome-pet-copy\"><strong>Adopt a pet</strong><span>A tiny floating companion that hangs out with you.</span></span><span class=\"welcome-pet-cta\">Pick one<svg width=\"12\" height=\""
+    },
+    {
+      "text": "Configure execution mode\nLocal CLI / BYOK",
+      "html": "<button type=\"button\" class=\"settings-nav-item active\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 21v-7\"></path><path d=\"M4 10V3\"></path><path d=\""
+    },
+    {
+      "text": "Media providers\nImage / video / audio",
+      "html": "<button type=\"button\" class=\"settings-nav-item\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"></rect><circle cx=\""
+    },
+    {
+      "text": "Connectors\nExternal system connections",
+      "html": "<button type=\"button\" class=\"settings-nav-item\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 21v-7\"></path><path d=\"M4 10V3\"></path><path d=\"M12 21v"
+    },
+    {
+      "text": "MCP server\nConnect your coding agent",
+      "html": "<button type=\"button\" class=\"settings-nav-item\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 1 0-7.07-7.07L11.75 5.1"
+    },
+    {
+      "text": "Language\nSwitch the interface language. Saved to this browser.",
+      "html": "<button type=\"button\" class=\"settings-nav-item\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m5 8 6 6\"></path><path d=\"m4 14 6-6 2-3\"></path><path d=\"M"
+    },
+    {
+      "text": "Appearance\nChoose light, dark, or follow your system setting.",
+      "html": "<button type=\"button\" class=\"settings-nav-item\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 8a2.83 2.83 0 0 0 4 4 4 4 0 1 1-4-4\"></path><path d=\"M"
+    },
+    {
+      "text": "Notifications\nSound and desktop notification on task completion",
+      "html": "<button type=\"button\" class=\"settings-nav-item\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9\"></path><path d="
+    },
+    {
+      "text": "Pets\nAdopt or customize",
+      "html": "<button type=\"button\" class=\"settings-nav-item\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m12 3 1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5z\"><"
+    },
+    {
+      "text": "Skills & Design Systems\nBrowse, preview, and toggle your content library",
+      "html": "<button type=\"button\" class=\"settings-nav-item\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"1\"></rect><rect x=\"14\" y"
+    },
+    {
+      "text": "About\nVersion and runtime details",
+      "html": "<button type=\"button\" class=\"settings-nav-item\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"3\"></circle><path d=\"M19.4 15a1.7 1.7 0 "
+    },
+    {
+      "text": "Local CLI\ndaemon offline",
+      "html": "<button type=\"button\" role=\"tab\" aria-selected=\"true\" class=\"seg-btn active\" disabled=\"\" title=\"Daemon is not running\"><span class=\"seg-title\">Local CLI</span><span class=\"seg-meta\">daemon offline</span></button>"
+    },
+    {
+      "text": "BYOK\nAPI provider",
+      "html": "<button type=\"button\" role=\"tab\" aria-selected=\"false\" class=\"seg-btn\"><span class=\"seg-title\">BYOK</span><span class=\"seg-meta\">API provider</span></button>"
+    },
+    {
+      "text": "Test",
+      "html": "<button type=\"button\" class=\"ghost icon-btn settings-test-btn\" disabled=\"\" title=\"Send a tiny test prompt to verify the connection\">Test</button>"
+    },
+    {
+      "text": "↻ Rescan",
+      "html": "<button type=\"button\" class=\"ghost icon-btn settings-rescan-btn\" title=\"Re-scan PATH\">↻ Rescan</button>"
+    },
+    {
+      "text": "Skip for now",
+      "html": "<button type=\"button\" class=\"ghost\">Skip for now</button>"
+    },
+    {
+      "text": "Get started",
+      "html": "<button type=\"button\" class=\"primary\" disabled=\"\">Get started</button>"
+    },
+    {
+      "text": "Sign in",
+      "html": "<button component=\"SignInButton\">Sign in</button>"
+    }
+  ],
+  "loadingShell": null,
+  "iframes": [],
+  "visible": true,
+  "mainText": "Open Design\nPrototype\nLive artifact\nSlide deck\nFrom template\nImage\nVideo\nAudio\nOther\nNew prototype\nDesign system\nNone — freeform\nNo system tokens, choose your own palette\nFidelity\nWireframe\nHigh fidelity\nCreate\nImport Claude Design ZIP\nOnly you can see your project by default.\n🐾\nAdopt a pet\nLocal CLI\n·\nno agent selected\nFollow @nexudotio\nEnglish\nDesigns\nExamples\nDesign systems\nConnectors\nImage templates\nVideo templates\nRecent\nYour designs\nNo projects yet. Create one on the left.\n🐾\nPETS\n\nPick a companion to float over your workspace.\n\nAdopt a pet\n🦄\nBuddy\nYour own — name, glyph, color.\nCustomize…\nWELCOME\nSet up Open Design\n\nPick how you'd like to run generations. You can change this any time from the Settings button in the top bar.\n\n🐾\nAdopt a pet\nA tiny floating companion that hangs out "
+}

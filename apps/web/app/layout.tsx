@@ -1,13 +1,13 @@
 import type { Metadata, Viewport } from 'next';
 import type { ReactNode } from 'react';
-import { ClerkProvider, SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs';
+import { ClerkProvider } from '@clerk/nextjs';
 import { I18nProvider } from '../src/i18n';
 import { ConvexClientProvider } from '../components/ConvexClientProvider';
 import { AuthenticatedView } from '../components/AuthenticatedView';
 import '../src/index.css';
 
 export const metadata: Metadata = {
-  title: 'Open Design',
+  title: 'Agentik Design',
   icons: {
     icon: '/app-icon.svg',
     // Safari pinned-tab mask icon — Next.js's Metadata API doesn't have a
@@ -33,7 +33,10 @@ const themeInitScript = `(function(){try{var c=JSON.parse(localStorage.getItem('
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      signInFallbackRedirectUrl='/'
+      signUpFallbackRedirectUrl='/'
+    >
       <html lang='en' suppressHydrationWarning>
         {/* eslint-disable-next-line @next/next/no-sync-scripts */}
         <head>
@@ -44,35 +47,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <ConvexClientProvider>
             <AuthenticatedView />
             <I18nProvider>{children}</I18nProvider>
-            {/* BYOK Phase 1: tiny auth widget so users can sign in/out without
-                touching the SPA shell. Inside ConvexClientProvider so Clerk's
-                auth state stays consistent with Convex's useAuth() reads. */}
-            <div
-              style={{
-                position: 'fixed',
-                top: 12,
-                right: 12,
-                zIndex: 50,
-                display: 'flex',
-                alignItems: 'center',
-                gap: 8,
-              }}
-            >
-              <SignedOut>
-                <SignInButton mode='modal' />
-              </SignedOut>
-              <SignedIn>
-                <UserButton afterSignOutUrl='/'>
-                  <UserButton.MenuItems>
-                    <UserButton.Link
-                      label='Settings'
-                      labelIcon={<span>⚙</span>}
-                      href='/settings'
-                    />
-                  </UserButton.MenuItems>
-                </UserButton>
-              </SignedIn>
-            </div>
           </ConvexClientProvider>
         </body>
       </html>
