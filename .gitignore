@@ -1,0 +1,60 @@
+# --- AgentikDesign-specific ---
+.env
+.env.local
+**/CLAUDE.md
+.oracles/
+.planner/
+
+# --- open-design (upstream) ---
+node_modules/
+dist/
+out/
+.next/
+.next-*/
+.tmp/
+.DS_Store
+*.log
+*.exe
+.vite
+.astro/
+.vscode
+
+# Local runtime data — auto-created by the daemon on first start.
+.od
+.od-e2e
+test-results
+playwright-report
+e2e/.od-data
+e2e/playwright-report
+e2e/reports/html
+e2e/reports/playwright-html-report
+e2e/reports/test-results
+e2e/reports/results.json
+e2e/reports/junit.xml
+e2e/reports/latest.md
+e2e/ui/.od-data
+e2e/ui/reports
+e2e/ui/test-results
+apps/web/playwright/
+
+# Legacy folder name from before the rename.
+.ocd
+
+tsconfig.tsbuildinfo
+
+.claude-sessions/*
+
+.cursor/
+.agents/
+.opencode/
+.codex/
+.deepseek/
+
+# Commander task scratchpad
+.task/
+task.md
+specs/change/active
+.ralph/
+
+# Convex — keep stubs committed so Vercel build doesn't fail before codegen
+# convex/_generated/

@@ -1,0 +1,25 @@
+"use client";
+
+import { ReactNode } from "react";
+import { ConvexReactClient } from "convex/react";
+import { ConvexProviderWithClerk } from "convex/react-clerk";
+import { useAuth } from "@clerk/nextjs";
+
+const convexUrl = process.env.NEXT_PUBLIC_CONVEX_URL;
+
+const convex = convexUrl
+  ? new ConvexReactClient(convexUrl)
+  : null;
+
+export function ConvexClientProvider({ children }: { children: ReactNode }) {
+  if (!convex) {
+    // No Convex URL configured — render children without provider so the
+    // build/dev experience still works (e.g. landing page only).
+    return <>{children}</>;
+  }
+  return (
+    <ConvexProviderWithClerk client={convex} useAuth={useAuth}>
+      {children}
+    </ConvexProviderWithClerk>
+  );
+}
