@@ -62,6 +62,6 @@ describe("tools-dev diagnostics", () => {
     assert.match(error.message, /daemon did not expose status in time/);
     assert.match(error.message, /daemon log tail \(\/tmp\/daemon\.log\)/);
     assert.match(error.message, /better_sqlite3\.node/);
-    assert.match(error.message, /pnpm --filter @open-design\/daemon rebuild better-sqlite3 --pending/);
+    assert.match(error.message, /pnpm --filter @agentik-design\/daemon rebuild better-sqlite3 --pending/);
   });
 });

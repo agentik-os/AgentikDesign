@@ -3,7 +3,7 @@ import { join, resolve } from "node:path";
 
 import { app } from "electron";
 
-import { SIDECAR_DEFAULTS, normalizeNamespace } from "@open-design/sidecar-proto";
+import { SIDECAR_DEFAULTS, normalizeNamespace } from "@agentik-design/sidecar-proto";
 
 export const PACKAGED_CONFIG_PATH_ENV = "OD_PACKAGED_CONFIG_PATH";
 export const PACKAGED_NAMESPACE_ENV = "OD_PACKAGED_NAMESPACE";

@@ -1,6 +1,6 @@
-import { APP_KEYS, OPEN_DESIGN_SIDECAR_CONTRACT } from "@open-design/sidecar-proto";
-import { bootstrapSidecarRuntime } from "@open-design/sidecar";
-import { readProcessStamp } from "@open-design/platform";
+import { APP_KEYS, OPEN_DESIGN_SIDECAR_CONTRACT } from "@agentik-design/sidecar-proto";
+import { bootstrapSidecarRuntime } from "@agentik-design/sidecar";
+import { readProcessStamp } from "@agentik-design/platform";
 
 import { startDaemonSidecar } from "./server.js";
 

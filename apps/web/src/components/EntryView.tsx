@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type KeyboardEvent as ReactKeyboardEvent, type SyntheticEvent } from 'react';
-import type { ConnectorDetail, ConnectorStatusResponse } from '@open-design/contracts';
+import type { ConnectorDetail, ConnectorStatusResponse } from '@agentik-design/contracts';
 import { useT } from '../i18n';
 import {
   DEFAULT_AUDIO_MODEL,

@@ -6,12 +6,12 @@ import {
   normalizeDaemonSidecarMessage,
   type DaemonStatusSnapshot,
   type SidecarStamp,
-} from "@open-design/sidecar-proto";
+} from "@agentik-design/sidecar-proto";
 import {
   createJsonIpcServer,
   type JsonIpcServerHandle,
   type SidecarRuntimeContext,
-} from "@open-design/sidecar";
+} from "@agentik-design/sidecar";
 
 import { startServer } from "../server.js";
 

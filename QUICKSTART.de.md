@@ -70,8 +70,8 @@ pnpm tools-dev status          # verwaltete Runtimes prüfen
 pnpm tools-dev logs            # daemon/web/desktop logs anzeigen
 pnpm tools-dev check           # status + aktuelle logs + gängige Diagnosen
 pnpm tools-dev stop            # verwaltete Runtimes stoppen
-pnpm --filter @open-design/daemon build  # apps/daemon/dist/cli.js für `od` bauen
-pnpm --filter @open-design/web build     # Web-Paket bei Bedarf bauen
+pnpm --filter @agentik-design/daemon build  # apps/daemon/dist/cli.js für `od` bauen
+pnpm --filter @agentik-design/web build     # Web-Paket bei Bedarf bauen
 pnpm typecheck                 # Workspace-Typecheck
 ```
 
@@ -91,7 +91,7 @@ Image-, Video-, Audio- und HyperFrames-Skills rufen die lokale `od` CLI über Um
 Wenn Mediengenerierung mit `OD_BIN: parameter not set`, fehlendem `apps/daemon/dist/cli.js` oder `failed to reach daemon at http://127.0.0.1:0` fehlschlägt, bauen Sie die daemon-CLI neu und starten Sie die verwaltete Runtime neu:
 
 ```bash
-pnpm --filter @open-design/daemon build
+pnpm --filter @agentik-design/daemon build
 pnpm tools-dev restart --daemon-port 7457 --web-port 5175
 ls -la apps/daemon/dist/cli.js
 curl -s http://127.0.0.1:7457/api/health

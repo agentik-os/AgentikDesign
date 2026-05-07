@@ -50,9 +50,9 @@ import type {
   SkillDetail,
   SkillSummary,
   UpdateDeployConfigRequest,
-} from '@open-design/contracts';
+} from '@agentik-design/contracts';
 
-export type { PreviewCommentMember, PreviewCommentSelectionKind } from '@open-design/contracts';
+export type { PreviewCommentMember, PreviewCommentSelectionKind } from '@agentik-design/contracts';
 
 export type ExecMode = 'daemon' | 'api';
 export type ApiProtocol = 'anthropic' | 'openai' | 'azure' | 'google';

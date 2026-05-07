@@ -33,7 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 #### Packaging
-- Fixed packaged desktop startup by building `@open-design/contracts` to `dist/*.mjs` + `.d.ts`, pointing its exports at compiled JavaScript, and building contracts before all packaged lanes pack workspace tarballs. ([#577])
+- Fixed packaged desktop startup by building `@agentik-design/contracts` to `dist/*.mjs` + `.d.ts`, pointing its exports at compiled JavaScript, and building contracts before all packaged lanes pack workspace tarballs. ([#577])
 - Added packaged runtime beta gating so release candidates install, start, inspect `/api/health`, collect logs, stop, and uninstall before promotion. ([#637])
 
 #### Daemon and agents

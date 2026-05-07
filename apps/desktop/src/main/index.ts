@@ -14,7 +14,7 @@ import {
   type DesktopScreenshotInput,
   type SidecarStamp,
   type WebStatusSnapshot,
-} from "@open-design/sidecar-proto";
+} from "@agentik-design/sidecar-proto";
 import {
   bootstrapSidecarRuntime,
   createJsonIpcServer,
@@ -22,8 +22,8 @@ import {
   resolveAppIpcPath,
   type JsonIpcServerHandle,
   type SidecarRuntimeContext,
-} from "@open-design/sidecar";
-import { readProcessStamp } from "@open-design/platform";
+} from "@agentik-design/sidecar";
+import { readProcessStamp } from "@agentik-design/platform";
 
 import { createDesktopRuntime } from "./runtime.js";
 

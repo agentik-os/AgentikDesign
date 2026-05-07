@@ -45,9 +45,9 @@ It is the deployable counterpart to:
 ## Boundary constraints
 
 - Must remain a static Astro output.
-- Must not import from `@open-design/web`, `@open-design/daemon`,
-  `@open-design/desktop`, `@open-design/sidecar*`, or
-  `@open-design/contracts`. Those are product runtime concerns.
+- Must not import from `@agentik-design/web`, `@agentik-design/daemon`,
+  `@agentik-design/desktop`, `@agentik-design/sidecar*`, or
+  `@agentik-design/contracts`. Those are product runtime concerns.
 - Must not introduce a `src/` shell — keep all source under
   `app/`. If a component grows beyond ~80 lines, extract it to
   `app/_components/<name>.tsx`.
@@ -60,9 +60,9 @@ It is the deployable counterpart to:
 ## Common commands
 
 ```bash
-pnpm --filter @open-design/landing-page dev          # http://127.0.0.1:17574
-pnpm --filter @open-design/landing-page build        # static export → out/
-pnpm --filter @open-design/landing-page typecheck
+pnpm --filter @agentik-design/landing-page dev          # http://127.0.0.1:17574
+pnpm --filter @agentik-design/landing-page build        # static export → out/
+pnpm --filter @agentik-design/landing-page typecheck
 ```
 
 ## When to update this app

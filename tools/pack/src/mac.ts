@@ -15,8 +15,8 @@ import {
   type DesktopScreenshotResult,
   type DesktopStatusSnapshot,
   type SidecarStamp,
-} from "@open-design/sidecar-proto";
-import { createSidecarLaunchEnv, requestJsonIpc, resolveAppIpcPath } from "@open-design/sidecar";
+} from "@agentik-design/sidecar-proto";
+import { createSidecarLaunchEnv, requestJsonIpc, resolveAppIpcPath } from "@agentik-design/sidecar";
 import {
   collectProcessTreePids,
   createPackageManagerInvocation,
@@ -26,7 +26,7 @@ import {
   readLogTail,
   spawnBackgroundProcess,
   stopProcesses,
-} from "@open-design/platform";
+} from "@agentik-design/platform";
 
 import type { ToolPackBuildOutput, ToolPackConfig } from "./config.js";
 import { copyBundledResourceTrees, macResources } from "./resources.js";
@@ -35,14 +35,14 @@ const execFileAsync = promisify(execFile);
 const PRODUCT_NAME = "Open Design";
 
 const INTERNAL_PACKAGES = [
-  { directory: "packages/contracts", name: "@open-design/contracts" },
-  { directory: "packages/sidecar-proto", name: "@open-design/sidecar-proto" },
-  { directory: "packages/sidecar", name: "@open-design/sidecar" },
-  { directory: "packages/platform", name: "@open-design/platform" },
-  { directory: "apps/daemon", name: "@open-design/daemon" },
-  { directory: "apps/web", name: "@open-design/web" },
-  { directory: "apps/desktop", name: "@open-design/desktop" },
-  { directory: "apps/packaged", name: "@open-design/packaged" },
+  { directory: "packages/contracts", name: "@agentik-design/contracts" },
+  { directory: "packages/sidecar-proto", name: "@agentik-design/sidecar-proto" },
+  { directory: "packages/sidecar", name: "@agentik-design/sidecar" },
+  { directory: "packages/platform", name: "@agentik-design/platform" },
+  { directory: "apps/daemon", name: "@agentik-design/daemon" },
+  { directory: "apps/web", name: "@agentik-design/web" },
+  { directory: "apps/desktop", name: "@agentik-design/desktop" },
+  { directory: "apps/packaged", name: "@agentik-design/packaged" },
 ] as const;
 
 type PackedTarballInfo = {
@@ -440,16 +440,16 @@ async function buildWorkspaceArtifacts(config: ToolPackConfig): Promise<void> {
   const webNextEnvPath = join(config.workspaceRoot, "apps", "web", "next-env.d.ts");
   const previousWebNextEnv = await readFile(webNextEnvPath, "utf8").catch(() => null);
 
-  await runPnpm(config, ["--filter", "@open-design/contracts", "build"]);
-  await runPnpm(config, ["--filter", "@open-design/sidecar-proto", "build"]);
-  await runPnpm(config, ["--filter", "@open-design/sidecar", "build"]);
-  await runPnpm(config, ["--filter", "@open-design/platform", "build"]);
-  await runPnpm(config, ["--filter", "@open-design/daemon", "build"]);
+  await runPnpm(config, ["--filter", "@agentik-design/contracts", "build"]);
+  await runPnpm(config, ["--filter", "@agentik-design/sidecar-proto", "build"]);
+  await runPnpm(config, ["--filter", "@agentik-design/sidecar", "build"]);
+  await runPnpm(config, ["--filter", "@agentik-design/platform", "build"]);
+  await runPnpm(config, ["--filter", "@agentik-design/daemon", "build"]);
   try {
-    await runPnpm(config, ["--filter", "@open-design/web", "build"], {
+    await runPnpm(config, ["--filter", "@agentik-design/web", "build"], {
       OD_WEB_OUTPUT_MODE: config.webOutputMode,
     });
-    await runPnpm(config, ["--filter", "@open-design/web", "build:sidecar"]);
+    await runPnpm(config, ["--filter", "@agentik-design/web", "build:sidecar"]);
   } finally {
     if (previousWebNextEnv == null) {
       await rm(webNextEnvPath, { force: true });
@@ -457,8 +457,8 @@ async function buildWorkspaceArtifacts(config: ToolPackConfig): Promise<void> {
       await writeFile(webNextEnvPath, previousWebNextEnv, "utf8");
     }
   }
-  await runPnpm(config, ["--filter", "@open-design/desktop", "build"]);
-  await runPnpm(config, ["--filter", "@open-design/packaged", "build"]);
+  await runPnpm(config, ["--filter", "@agentik-design/desktop", "build"]);
+  await runPnpm(config, ["--filter", "@agentik-design/packaged", "build"]);
 }
 
 async function copyResourceTree(config: ToolPackConfig, paths: MacPaths): Promise<void> {
@@ -540,7 +540,7 @@ async function writeAssembledApp(
   );
   await writeFile(
     paths.assembledMainEntryPath,
-    'import("@open-design/packaged").catch((error) => {\n  console.error("packaged entry failed", error);\n  process.exit(1);\n});\n',
+    'import("@agentik-design/packaged").catch((error) => {\n  console.error("packaged entry failed", error);\n  process.exit(1);\n});\n',
     "utf8",
   );
   await writeFile(
@@ -816,9 +816,9 @@ async function collectMacSizeReport(
       sourcemapBytes: await sizePathBytes(paths.appPath, { includeFile: (path) => path.endsWith(".map") }),
       tsbuildInfoBytes: await sizePathBytes(paths.appPath, { includeFile: (path) => path.endsWith(".tsbuildinfo") }),
       webCopiedStandaloneBytes: await sizePathBytes(join(appResourcesRoot, WEB_STANDALONE_RESOURCE_NAME)),
-      webNextCacheBytes: await sizePathBytes(join(appNodeModulesRoot, "@open-design", "web", ".next", "cache")),
-      webPackageBytes: await sizePathBytes(join(appNodeModulesRoot, "@open-design", "web")),
-      webPackageStandaloneBytes: await sizePathBytes(join(appNodeModulesRoot, "@open-design", "web", ".next", "standalone")),
+      webNextCacheBytes: await sizePathBytes(join(appNodeModulesRoot, "@agentik-design", "web", ".next", "cache")),
+      webPackageBytes: await sizePathBytes(join(appNodeModulesRoot, "@agentik-design", "web")),
+      webPackageStandaloneBytes: await sizePathBytes(join(appNodeModulesRoot, "@agentik-design", "web", ".next", "standalone")),
     },
     zipBytes: artifacts.zipPath == null ? null : await sizeExistingFileBytes(artifacts.zipPath),
   };

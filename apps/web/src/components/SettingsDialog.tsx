@@ -2261,7 +2261,7 @@ function IntegrationsSection() {
                 : 'Node binary is missing.'}
             </strong>{' '}
             {info.buildHint ??
-              'apps/daemon/dist/cli.js is missing. Run `pnpm --filter @open-design/daemon build` and refresh.'}
+              'apps/daemon/dist/cli.js is missing. Run `pnpm --filter @agentik-design/daemon build` and refresh.'}
           </div>
         ) : null}
 

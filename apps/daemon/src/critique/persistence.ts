@@ -1,5 +1,5 @@
 import type Database from 'better-sqlite3';
-import type { ShipStatus } from '@open-design/contracts/critique';
+import type { ShipStatus } from '@agentik-design/contracts/critique';
 
 /**
  * Final critique status persisted with each run. Mirrors the spec's CHECK

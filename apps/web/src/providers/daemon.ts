@@ -20,7 +20,7 @@ import type {
   ChatSseStartPayload,
   DaemonAgentPayload,
   SseErrorPayload,
-} from '@open-design/contracts';
+} from '@agentik-design/contracts';
 import type { StreamHandlers } from './anthropic';
 import { parseSseFrame } from './sse';
 

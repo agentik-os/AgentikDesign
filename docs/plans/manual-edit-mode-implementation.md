@@ -41,9 +41,9 @@ The product boundary is fixed:
 ## Verification Commands
 
 ```bash
-pnpm --filter @open-design/web typecheck
-pnpm --filter @open-design/web test
-pnpm --filter @open-design/e2e test:ui -- --grep "manual edit"
+pnpm --filter @agentik-design/web typecheck
+pnpm --filter @agentik-design/web test
+pnpm --filter @agentik-design/e2e test:ui -- --grep "manual edit"
 pnpm typecheck
 pnpm test
 pnpm check:residual-js

@@ -1,4 +1,4 @@
-import type { AppConfigPrefs } from '@open-design/contracts';
+import type { AppConfigPrefs } from '@agentik-design/contracts';
 import { isOpenAICompatible } from '../providers/openai-compatible';
 import type {
   ApiProtocol,

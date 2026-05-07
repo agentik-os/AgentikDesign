@@ -25,11 +25,11 @@ Follow the root `AGENTS.md` first. This file only records module-level boundarie
 ## Common package commands
 
 ```bash
-pnpm --filter @open-design/contracts typecheck
-pnpm --filter @open-design/sidecar-proto typecheck
-pnpm --filter @open-design/sidecar-proto test
-pnpm --filter @open-design/sidecar typecheck
-pnpm --filter @open-design/sidecar test
-pnpm --filter @open-design/platform typecheck
-pnpm --filter @open-design/platform test
+pnpm --filter @agentik-design/contracts typecheck
+pnpm --filter @agentik-design/sidecar-proto typecheck
+pnpm --filter @agentik-design/sidecar-proto test
+pnpm --filter @agentik-design/sidecar typecheck
+pnpm --filter @agentik-design/sidecar test
+pnpm --filter @agentik-design/platform typecheck
+pnpm --filter @agentik-design/platform test
 ```

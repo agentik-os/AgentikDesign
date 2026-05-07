@@ -27,7 +27,7 @@ import {
   resolveAgentBin,
   spawnEnvForAgent,
 } from './agents.js';
-import { createCommandInvocation } from '@open-design/platform';
+import { createCommandInvocation } from '@agentik-design/platform';
 import { attachAcpSession } from './acp.js';
 import { attachPiRpcSession } from './pi-rpc.js';
 import { createClaudeStreamHandler } from './claude-stream.js';
@@ -40,7 +40,7 @@ import type {
   ConnectionTestProtocol,
   ConnectionTestResponse,
   ProviderTestRequest,
-} from '@open-design/contracts/api/connectionTest';
+} from '@agentik-design/contracts/api/connectionTest';
 
 // Aggressive but not punitive — happy paths usually return in under 2 s.
 const PROVIDER_TIMEOUT_MS = 12_000;

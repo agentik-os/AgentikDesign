@@ -15,7 +15,7 @@ import {
   shouldRenderCodexImagegenOverride,
 } from './prompts/system.js';
 import { expandHomePrefix, resolveProjectRelativePath } from './home-expansion.js';
-import { createCommandInvocation } from '@open-design/platform';
+import { createCommandInvocation } from '@agentik-design/platform';
 import {
   buildLiveArtifactsMcpServersForAgent,
   checkPromptArgvBudget,
@@ -151,13 +151,13 @@ import {
   writeVercelConfig,
 } from './deploy.js';
 
-/** @typedef {import('@open-design/contracts').ApiErrorCode} ApiErrorCode */
-/** @typedef {import('@open-design/contracts').ApiError} ApiError */
-/** @typedef {import('@open-design/contracts').ApiErrorResponse} ApiErrorResponse */
-/** @typedef {import('@open-design/contracts').ChatRequest} ChatRequest */
-/** @typedef {import('@open-design/contracts').ChatSseEvent} ChatSseEvent */
-/** @typedef {import('@open-design/contracts').ProxyStreamRequest} ProxyStreamRequest */
-/** @typedef {import('@open-design/contracts').ProxySseEvent} ProxySseEvent */
+/** @typedef {import('@agentik-design/contracts').ApiErrorCode} ApiErrorCode */
+/** @typedef {import('@agentik-design/contracts').ApiError} ApiError */
+/** @typedef {import('@agentik-design/contracts').ApiErrorResponse} ApiErrorResponse */
+/** @typedef {import('@agentik-design/contracts').ChatRequest} ChatRequest */
+/** @typedef {import('@agentik-design/contracts').ChatSseEvent} ChatSseEvent */
+/** @typedef {import('@agentik-design/contracts').ProxyStreamRequest} ProxyStreamRequest */
+/** @typedef {import('@agentik-design/contracts').ProxySseEvent} ProxySseEvent */
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -170,7 +170,7 @@ export function resolveProjectRoot(moduleDir: string): string {
 }
 
 export function resolveDaemonCliPath(): string {
-  const packageJsonPath = require.resolve('@open-design/daemon/package.json');
+  const packageJsonPath = require.resolve('@agentik-design/daemon/package.json');
   return path.join(path.dirname(packageJsonPath), 'dist', 'cli.js');
 }
 
@@ -1573,7 +1573,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
     const hints: string[] = [];
     if (!cliExists) {
       hints.push(
-        'apps/daemon/dist/cli.js is missing. Run `pnpm --filter @open-design/daemon build` and refresh.',
+        'apps/daemon/dist/cli.js is missing. Run `pnpm --filter @agentik-design/daemon build` and refresh.',
       );
     }
     if (!nodeExists) {
@@ -1623,7 +1623,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
           }
         }
       }
-      /** @type {import('@open-design/contracts').ProjectsResponse} */
+      /** @type {import('@agentik-design/contracts').ProjectsResponse} */
       const body = {
         projects: listProjects(db).map((project) => ({
           ...project,
@@ -1725,7 +1725,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
           }
         }
       }
-      /** @type {import('@open-design/contracts').CreateProjectResponse} */
+      /** @type {import('@agentik-design/contracts').CreateProjectResponse} */
       const body = { project, conversationId: cid };
       res.json(body);
     } catch (err) {
@@ -1797,7 +1797,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
     const project = getProject(db, req.params.id);
     if (!project)
       return sendApiError(res, 404, 'PROJECT_NOT_FOUND', 'not found');
-    /** @type {import('@open-design/contracts').ProjectResponse} */
+    /** @type {import('@agentik-design/contracts').ProjectResponse} */
     const body = { project };
     res.json(body);
   });
@@ -1815,7 +1815,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
       const project = updateProject(db, req.params.id, patch);
       if (!project)
         return sendApiError(res, 404, 'PROJECT_NOT_FOUND', 'not found');
-      /** @type {import('@open-design/contracts').ProjectResponse} */
+      /** @type {import('@agentik-design/contracts').ProjectResponse} */
       const body = { project };
       res.json(body);
     } catch (err) {
@@ -1827,7 +1827,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
     try {
       dbDeleteProject(db, req.params.id);
       await removeProjectDir(PROJECTS_DIR, req.params.id).catch(() => {});
-      /** @type {import('@open-design/contracts').OkResponse} */
+      /** @type {import('@agentik-design/contracts').OkResponse} */
       const body = { ok: true };
       res.json(body);
     } catch (err) {
@@ -2783,7 +2783,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
 
   app.get('/api/deploy/config', async (_req, res) => {
     try {
-      /** @type {import('@open-design/contracts').DeployConfigResponse} */
+      /** @type {import('@agentik-design/contracts').DeployConfigResponse} */
       const body = publicDeployConfig(await readVercelConfig());
       res.json(body);
     } catch (err) {
@@ -2793,7 +2793,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
 
   app.put('/api/deploy/config', async (req, res) => {
     try {
-      /** @type {import('@open-design/contracts').DeployConfigResponse} */
+      /** @type {import('@agentik-design/contracts').DeployConfigResponse} */
       const body = await writeVercelConfig(req.body || {});
       res.json(body);
     } catch (err) {
@@ -2803,7 +2803,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
 
   app.get('/api/projects/:id/deployments', (req, res) => {
     try {
-      /** @type {import('@open-design/contracts').ProjectDeploymentsResponse} */
+      /** @type {import('@agentik-design/contracts').ProjectDeploymentsResponse} */
       const body = { deployments: listDeployments(db, req.params.id) };
       res.json(body);
     } catch (err) {
@@ -2838,7 +2838,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
         projectId: req.params.id,
       });
       const now = Date.now();
-      /** @type {import('@open-design/contracts').DeployProjectFileResponse} */
+      /** @type {import('@agentik-design/contracts').DeployProjectFileResponse} */
       const body = upsertDeployment(db, {
         id: prior?.id ?? randomUUID(),
         projectId: req.params.id,
@@ -2885,7 +2885,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
       if (typeof fileName !== 'string' || !fileName.trim()) {
         return sendApiError(res, 400, 'BAD_REQUEST', 'fileName required');
       }
-      /** @type {import('@open-design/contracts').DeployPreflightResponse} */
+      /** @type {import('@agentik-design/contracts').DeployPreflightResponse} */
       const body = await prepareDeployPreflight(
         PROJECTS_DIR,
         req.params.id,
@@ -2929,7 +2929,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
         }
         const result = await checkDeploymentUrl(existing.url);
         const now = Date.now();
-        /** @type {import('@open-design/contracts').CheckDeploymentLinkResponse} */
+        /** @type {import('@agentik-design/contracts').CheckDeploymentLinkResponse} */
         const body = upsertDeployment(db, {
           ...existing,
           status: result.reachable ? 'ready' : result.status || 'link-delayed',
@@ -2963,7 +2963,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
       const files = await listFiles(PROJECTS_DIR, req.params.id, {
         since: Number.isFinite(since) ? since : undefined,
       });
-      /** @type {import('@open-design/contracts').ProjectFilesResponse} */
+      /** @type {import('@agentik-design/contracts').ProjectFilesResponse} */
       const body = { files };
       res.json(body);
     } catch (err) {
@@ -3105,7 +3105,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
   app.delete('/api/projects/:id/raw/*', async (req, res) => {
     try {
       await deleteProjectFile(PROJECTS_DIR, req.params.id, req.params[0]);
-      /** @type {import('@open-design/contracts').DeleteProjectFileResponse} */
+      /** @type {import('@agentik-design/contracts').DeleteProjectFileResponse} */
       const body = { ok: true };
       res.json(body);
     } catch (err) {
@@ -3189,7 +3189,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
             buf,
           );
           fs.promises.unlink(req.file.path).catch(() => {});
-          /** @type {import('@open-design/contracts').ProjectFileResponse} */
+          /** @type {import('@agentik-design/contracts').ProjectFileResponse} */
           const body = { file: meta };
           return res.json(body);
         }
@@ -3229,7 +3229,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
             artifactManifest,
           },
         );
-        /** @type {import('@open-design/contracts').ProjectFileResponse} */
+        /** @type {import('@agentik-design/contracts').ProjectFileResponse} */
         const body = { file: meta };
         res.json(body);
       } catch (err) {
@@ -3241,7 +3241,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
   app.delete('/api/projects/:id/files/:name', async (req, res) => {
     try {
       await deleteProjectFile(PROJECTS_DIR, req.params.id, req.params.name);
-      /** @type {import('@open-design/contracts').DeleteProjectFileResponse} */
+      /** @type {import('@agentik-design/contracts').DeleteProjectFileResponse} */
       const body = { ok: true };
       res.json(body);
     } catch (err) {
@@ -3524,7 +3524,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
             // skip files that vanished mid-flight
           }
         }
-        /** @type {import('@open-design/contracts').UploadProjectFilesResponse} */
+        /** @type {import('@agentik-design/contracts').UploadProjectFilesResponse} */
         const body = { files: out };
         res.json(body);
       } catch (err) {
@@ -4388,7 +4388,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
 
   app.post('/api/runs', (req, res) => {
     const run = design.runs.create(req.body || {});
-    /** @type {import('@open-design/contracts').ChatRunCreateResponse} */
+    /** @type {import('@agentik-design/contracts').ChatRunCreateResponse} */
     const body = { runId: run.id };
     res.status(202).json(body);
     design.runs.start(run, () => startChatRun(req.body || {}, run));
@@ -4397,7 +4397,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
   app.get('/api/runs', (req, res) => {
     const { projectId, conversationId, status } = req.query;
     const runs = design.runs.list({ projectId, conversationId, status });
-    /** @type {import('@open-design/contracts').ChatRunListResponse} */
+    /** @type {import('@agentik-design/contracts').ChatRunListResponse} */
     const body = { runs: runs.map(design.runs.statusBody) };
     res.json(body);
   });
@@ -4418,7 +4418,7 @@ export async function startServer({ port = 7456, host = process.env.OD_BIND_HOST
     const run = design.runs.get(req.params.id);
     if (!run) return sendApiError(res, 404, 'NOT_FOUND', 'run not found');
     design.runs.cancel(run);
-    /** @type {import('@open-design/contracts').ChatRunCancelResponse} */
+    /** @type {import('@agentik-design/contracts').ChatRunCancelResponse} */
     const body = { ok: true };
     res.json(body);
   });

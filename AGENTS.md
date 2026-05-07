@@ -100,14 +100,14 @@ pnpm typecheck
 ```
 
 ```bash
-pnpm --filter @open-design/web typecheck
-pnpm --filter @open-design/web test
-pnpm --filter @open-design/web build
-pnpm --filter @open-design/daemon test
-pnpm --filter @open-design/daemon build
-pnpm --filter @open-design/desktop build
-pnpm --filter @open-design/tools-dev build
-pnpm --filter @open-design/tools-pack build
+pnpm --filter @agentik-design/web typecheck
+pnpm --filter @agentik-design/web test
+pnpm --filter @agentik-design/web build
+pnpm --filter @agentik-design/daemon test
+pnpm --filter @agentik-design/daemon build
+pnpm --filter @agentik-design/desktop build
+pnpm --filter @agentik-design/tools-dev build
+pnpm --filter @agentik-design/tools-pack build
 ```
 
 ```bash
@@ -138,7 +138,7 @@ Desktop queries runtime status through sidecar IPC. The web URL comes from `tool
 
 ## How are sidecar-proto, sidecar, and platform split?
 
-`@open-design/sidecar-proto` owns Open Design app/mode/source constants, namespace validation, stamp fields/flags, IPC message schema, status shapes, and error semantics. `@open-design/sidecar` provides only generic bootstrap, IPC transport, path/runtime resolution, launch env, and JSON runtime files. `@open-design/platform` provides only generic OS process stamp serialization, command parsing, and process matching/search primitives, consuming the proto descriptor.
+`@agentik-design/sidecar-proto` owns Open Design app/mode/source constants, namespace validation, stamp fields/flags, IPC message schema, status shapes, and error semantics. `@agentik-design/sidecar` provides only generic bootstrap, IPC transport, path/runtime resolution, launch env, and JSON runtime files. `@agentik-design/platform` provides only generic OS process stamp serialization, command parsing, and process matching/search primitives, consuming the proto descriptor.
 
 ## Where is data written?
 

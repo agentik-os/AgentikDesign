@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import type { ConnectorDetail } from '@open-design/contracts';
+import type { ConnectorDetail } from '@agentik-design/contracts';
 import { useT } from '../i18n';
 import type { Dict } from '../i18n/types';
 import { fetchPromptTemplate } from '../providers/registry';

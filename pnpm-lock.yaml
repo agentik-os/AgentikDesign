@@ -8,10 +8,10 @@ importers:
 
   .:
     devDependencies:
-      '@open-design/tools-dev':
+      '@agentik-design/tools-dev':
         specifier: workspace:*
         version: link:tools/dev
-      '@open-design/tools-pack':
+      '@agentik-design/tools-pack':
         specifier: workspace:*
         version: link:tools/pack
       '@types/node':
@@ -26,21 +26,21 @@ importers:
 
   apps/daemon:
     dependencies:
+      '@agentik-design/contracts':
+        specifier: workspace:*
+        version: link:../../packages/contracts
+      '@agentik-design/platform':
+        specifier: workspace:*
+        version: link:../../packages/platform
+      '@agentik-design/sidecar':
+        specifier: workspace:*
+        version: link:../../packages/sidecar
+      '@agentik-design/sidecar-proto':
+        specifier: workspace:*
+        version: link:../../packages/sidecar-proto
       '@modelcontextprotocol/sdk':
         specifier: ^1.0.0
         version: 1.29.0(zod@4.4.2)
-      '@open-design/contracts':
-        specifier: workspace:*
-        version: link:../../packages/contracts
-      '@open-design/platform':
-        specifier: workspace:*
-        version: link:../../packages/platform
-      '@open-design/sidecar':
-        specifier: workspace:*
-        version: link:../../packages/sidecar
-      '@open-design/sidecar-proto':
-        specifier: workspace:*
-        version: link:../../packages/sidecar-proto
       better-sqlite3:
         specifier: ^12.9.0
         version: 12.9.0
@@ -78,13 +78,13 @@ importers:
 
   apps/desktop:
     dependencies:
-      '@open-design/platform':
+      '@agentik-design/platform':
         specifier: workspace:*
         version: link:../../packages/platform
-      '@open-design/sidecar':
+      '@agentik-design/sidecar':
         specifier: workspace:*
         version: link:../../packages/sidecar
-      '@open-design/sidecar-proto':
+      '@agentik-design/sidecar-proto':
         specifier: workspace:*
         version: link:../../packages/sidecar-proto
     devDependencies:
@@ -131,22 +131,22 @@ importers:
 
   apps/packaged:
     dependencies:
-      '@open-design/daemon':
+      '@agentik-design/daemon':
         specifier: workspace:*
         version: link:../daemon
-      '@open-design/desktop':
+      '@agentik-design/desktop':
         specifier: workspace:*
         version: link:../desktop
-      '@open-design/platform':
+      '@agentik-design/platform':
         specifier: workspace:*
         version: link:../../packages/platform
-      '@open-design/sidecar':
+      '@agentik-design/sidecar':
         specifier: workspace:*
         version: link:../../packages/sidecar
-      '@open-design/sidecar-proto':
+      '@agentik-design/sidecar-proto':
         specifier: workspace:*
         version: link:../../packages/sidecar-proto
-      '@open-design/web':
+      '@agentik-design/web':
         specifier: workspace:*
         version: link:../web
     devDependencies:
@@ -168,24 +168,24 @@ importers:
 
   apps/web:
     dependencies:
+      '@agentik-design/contracts':
+        specifier: workspace:*
+        version: link:../../packages/contracts
+      '@agentik-design/platform':
+        specifier: workspace:*
+        version: link:../../packages/platform
+      '@agentik-design/sidecar':
+        specifier: workspace:*
+        version: link:../../packages/sidecar
+      '@agentik-design/sidecar-proto':
+        specifier: workspace:*
+        version: link:../../packages/sidecar-proto
       '@anthropic-ai/sdk':
         specifier: ^0.32.1
         version: 0.32.1
       '@clerk/nextjs':
         specifier: ^6.21.0
         version: 6.39.3(next@16.2.4(@playwright/test@1.59.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@open-design/contracts':
-        specifier: workspace:*
-        version: link:../../packages/contracts
-      '@open-design/platform':
-        specifier: workspace:*
-        version: link:../../packages/platform
-      '@open-design/sidecar':
-        specifier: workspace:*
-        version: link:../../packages/sidecar
-      '@open-design/sidecar-proto':
-        specifier: workspace:*
-        version: link:../../packages/sidecar-proto
       convex:
         specifier: ^1.17.4
         version: 1.37.0(@clerk/clerk-react@5.61.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
@@ -308,13 +308,13 @@ importers:
 
   tools/dev:
     dependencies:
-      '@open-design/platform':
+      '@agentik-design/platform':
         specifier: workspace:*
         version: link:../../packages/platform
-      '@open-design/sidecar':
+      '@agentik-design/sidecar':
         specifier: workspace:*
         version: link:../../packages/sidecar
-      '@open-design/sidecar-proto':
+      '@agentik-design/sidecar-proto':
         specifier: workspace:*
         version: link:../../packages/sidecar-proto
       cac:
@@ -336,21 +336,21 @@ importers:
 
   tools/pack:
     dependencies:
+      '@agentik-design/platform':
+        specifier: workspace:*
+        version: link:../../packages/platform
+      '@agentik-design/sidecar':
+        specifier: workspace:*
+        version: link:../../packages/sidecar
+      '@agentik-design/sidecar-proto':
+        specifier: workspace:*
+        version: link:../../packages/sidecar-proto
       '@electron/notarize':
         specifier: 3.1.0
         version: 3.1.0
       '@electron/rebuild':
         specifier: 4.0.4
         version: 4.0.4
-      '@open-design/platform':
-        specifier: workspace:*
-        version: link:../../packages/platform
-      '@open-design/sidecar':
-        specifier: workspace:*
-        version: link:../../packages/sidecar
-      '@open-design/sidecar-proto':
-        specifier: workspace:*
-        version: link:../../packages/sidecar-proto
       cac:
         specifier: 6.7.14
         version: 6.7.14

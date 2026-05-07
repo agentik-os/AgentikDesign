@@ -7,26 +7,26 @@ import type { ToolPackConfig } from "./config.js";
 import { hashPackageSourcePath } from "./package-source-hash.js";
 
 const WORKSPACE_BUILD_PACKAGES = [
-  { directory: "packages/contracts", name: "@open-design/contracts" },
-  { directory: "packages/sidecar-proto", name: "@open-design/sidecar-proto" },
-  { directory: "packages/sidecar", name: "@open-design/sidecar" },
-  { directory: "packages/platform", name: "@open-design/platform" },
-  { directory: "apps/daemon", name: "@open-design/daemon" },
-  { directory: "apps/web", name: "@open-design/web" },
-  { directory: "apps/desktop", name: "@open-design/desktop" },
-  { directory: "apps/packaged", name: "@open-design/packaged" },
+  { directory: "packages/contracts", name: "@agentik-design/contracts" },
+  { directory: "packages/sidecar-proto", name: "@agentik-design/sidecar-proto" },
+  { directory: "packages/sidecar", name: "@agentik-design/sidecar" },
+  { directory: "packages/platform", name: "@agentik-design/platform" },
+  { directory: "apps/daemon", name: "@agentik-design/daemon" },
+  { directory: "apps/web", name: "@agentik-design/web" },
+  { directory: "apps/desktop", name: "@agentik-design/desktop" },
+  { directory: "apps/packaged", name: "@agentik-design/packaged" },
 ] as const;
 
 const BUILD_COMMANDS = [
-  { args: ["--filter", "@open-design/contracts", "build"] },
-  { args: ["--filter", "@open-design/sidecar-proto", "build"] },
-  { args: ["--filter", "@open-design/sidecar", "build"] },
-  { args: ["--filter", "@open-design/platform", "build"] },
-  { args: ["--filter", "@open-design/daemon", "build"] },
-  { args: ["--filter", "@open-design/web", "build"], env: ["OD_WEB_OUTPUT_MODE"] },
-  { args: ["--filter", "@open-design/web", "build:sidecar"] },
-  { args: ["--filter", "@open-design/desktop", "build"] },
-  { args: ["--filter", "@open-design/packaged", "build"] },
+  { args: ["--filter", "@agentik-design/contracts", "build"] },
+  { args: ["--filter", "@agentik-design/sidecar-proto", "build"] },
+  { args: ["--filter", "@agentik-design/sidecar", "build"] },
+  { args: ["--filter", "@agentik-design/platform", "build"] },
+  { args: ["--filter", "@agentik-design/daemon", "build"] },
+  { args: ["--filter", "@agentik-design/web", "build"], env: ["OD_WEB_OUTPUT_MODE"] },
+  { args: ["--filter", "@agentik-design/web", "build:sidecar"] },
+  { args: ["--filter", "@agentik-design/desktop", "build"] },
+  { args: ["--filter", "@agentik-design/packaged", "build"] },
 ] as const;
 
 type WorkspaceBuildMetadata = {
