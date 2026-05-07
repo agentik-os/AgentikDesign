@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "installCommand": "cd ../.. && pnpm install --no-frozen-lockfile",
-  "buildCommand": "cd ../.. && OD_WEB_OUTPUT_MODE=server pnpm --filter @agentik-design/web build && echo '{\"type\":\"commonjs\"}' > apps/web/.next/server/package.json",
+  "buildCommand": "cd ../.. && OD_WEB_OUTPUT_MODE=server pnpm --filter @agentik-design/web build && node -e \"const fs=require('fs'),p='apps/web/package.json',j=JSON.parse(fs.readFileSync(p,'utf8'));delete j.type;fs.writeFileSync(p,JSON.stringify(j,null,2));console.log('[vercel-deploy] removed type:module from apps/web/package.json so Node launcher can require route bundles')\"",
   "outputDirectory": ".next",
   "framework": "nextjs"
 }
