@@ -1210,8 +1210,8 @@ function DesignSystemPicker({
         if (b.id === defaultDesignSystemId) return 1;
         const ca = a.category || 'Other';
         const cb = b.category || 'Other';
-        if (ca !== cb) return ca.localeCompare(cb);
-        return a.title.localeCompare(b.title);
+        if (ca !== cb) return (ca ?? '').localeCompare(cb ?? '');
+        return (a.title ?? '').localeCompare(b.title ?? '');
       });
     return [...picked, ...rest];
   }, [designSystems, byId, selectedIds, defaultDesignSystemId]);

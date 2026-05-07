@@ -132,7 +132,10 @@ export function sortConnectorsForDisplay(connectors: ConnectorDetail[]): Connect
     const aConnected = a.status === 'connected';
     const bConnected = b.status === 'connected';
     if (aConnected !== bConnected) return aConnected ? -1 : 1;
-    return a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }) || a.id.localeCompare(b.id);
+    return (
+      (a.name ?? '').localeCompare(b.name ?? '', undefined, { sensitivity: 'base' }) ||
+      (a.id ?? '').localeCompare(b.id ?? '')
+    );
   });
 }
 
@@ -201,8 +204,8 @@ export function sortConnectorsForSearch(
       const bConnected = b.connector.status === 'connected';
       if (aConnected !== bConnected) return aConnected ? -1 : 1;
       return (
-        a.connector.name.localeCompare(b.connector.name, undefined, { sensitivity: 'base' }) ||
-        a.connector.id.localeCompare(b.connector.id)
+        (a.connector.name ?? '').localeCompare(b.connector.name ?? '', undefined, { sensitivity: 'base' }) ||
+        (a.connector.id ?? '').localeCompare(b.connector.id ?? '')
       );
     })
     .map((entry) => entry.connector);

@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useState } from 'react';
+import { useAuth } from '@clerk/nextjs';
 import { EntryView } from './components/EntryView';
 import type { CreateInput } from './components/NewProjectPanel';
 import { PetOverlay } from './components/pet/PetOverlay';
@@ -85,6 +86,11 @@ export function App() {
   // instead of an "empty" page that flickers before data lands.
   const [bootstrapping, setBootstrapping] = useState(true);
   const route = useRoute();
+  // Auth-gate every backend fetch: the BYOK API routes are Clerk-protected
+  // and reply 401 to anonymous callers. Hitting them eagerly while signed
+  // out spams the browser console with red 401s for endpoints the user
+  // explicitly cannot access yet.
+  const { isLoaded: authLoaded, isSignedIn } = useAuth();
 
   // Sync theme preference to the <html> element so CSS variables pick it up.
   // useLayoutEffect (vs useEffect) fires before the browser paints, so a
@@ -105,6 +111,10 @@ export function App() {
   const activeProjectId = route.kind === 'project' ? route.projectId : null;
   const activeFileName = route.kind === 'project' ? route.fileName : null;
   useEffect(() => {
+    // /api/active is Clerk-protected; calling it while signed-out yields
+    // 401s in the console for no benefit (the daemon's MCP context is a
+    // signed-in feature).
+    if (!isSignedIn) return;
     const body = activeProjectId
       ? { projectId: activeProjectId, fileName: activeFileName }
       : { active: false };
@@ -115,13 +125,21 @@ export function App() {
     }).catch(() => {
       // Daemon down or transient network — not worth surfacing.
     });
-  }, [activeProjectId, activeFileName]);
+  }, [activeProjectId, activeFileName, isSignedIn]);
 
   // Bootstrap — detect daemon, load pickers, seed sensible defaults.
   useEffect(() => {
+    // Wait for Clerk to resolve auth state. While auth is still loading,
+    // any fetch to a protected API would 401 noisily; better to stall the
+    // bootstrap one tick than to log false-positive errors.
+    if (!authLoaded) return;
     let cancelled = false;
     (async () => {
-      const alive = await daemonIsLive();
+      // Treat the daemon as "alive" only when signed in. The pickers, projects,
+      // templates, and prompt-templates endpoints all require Clerk auth — the
+      // local config still loads from localStorage so the UI shell renders
+      // for signed-out users without the API roundtrips.
+      const alive = isSignedIn ? await daemonIsLive() : false;
       if (cancelled) return;
       setDaemonLive(alive);
       const [
@@ -203,7 +221,10 @@ export function App() {
     return () => {
       cancelled = true;
     };
-  }, []);
+    // Re-run when auth state flips so newly signed-in users get their
+    // server-side data populated without a hard refresh.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [authLoaded, isSignedIn]);
 
   // One-shot self-healing migration for pets adopted before the
   // overlay learned atlas-row switching. If the stored pet is a

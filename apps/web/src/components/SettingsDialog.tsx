@@ -1788,7 +1788,7 @@ function MediaProvidersSection({
       const bConfigured = Boolean(bEntry?.apiKey.trim() || bEntry?.baseUrl.trim());
       if (aConfigured !== bConfigured) return aConfigured ? -1 : 1;
       if (a.integrated !== b.integrated) return a.integrated ? -1 : 1;
-      return a.label.localeCompare(b.label);
+      return (a.label ?? '').localeCompare(b.label ?? '');
     });
   const updateProvider = (
     provider: MediaProvider,
