@@ -521,10 +521,14 @@ export function App() {
   // a fresh template list. The template store is global — if they just
   // saved a template inside a project, returning home should reflect it
   // immediately in the From-template tab without forcing a page reload.
+  // Gated on isSignedIn because /api/templates is Clerk-protected; calling
+  // it while signed-out yields a 401 in the console for an endpoint the
+  // user explicitly cannot access yet.
   useEffect(() => {
     if (route.kind !== 'home') return;
+    if (!authLoaded || !isSignedIn) return;
     void refreshTemplates();
-  }, [route.kind, refreshTemplates]);
+  }, [route.kind, refreshTemplates, authLoaded, isSignedIn]);
 
   const enabledSkills = useMemo(
     () => skills.filter((s) => !(config.disabledSkills ?? []).includes(s.id)),
