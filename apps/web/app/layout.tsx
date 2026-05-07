@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 import { ClerkProvider, SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs';
 import { I18nProvider } from '../src/i18n';
 import { ConvexClientProvider } from '../components/ConvexClientProvider';
+import { AuthenticatedView } from '../components/AuthenticatedView';
 import '../src/index.css';
 
 export const metadata: Metadata = {
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </head>
         <body suppressHydrationWarning>
           <ConvexClientProvider>
+            <AuthenticatedView />
             <I18nProvider>{children}</I18nProvider>
             {/* BYOK Phase 1: tiny auth widget so users can sign in/out without
                 touching the SPA shell. Inside ConvexClientProvider so Clerk's
@@ -60,7 +62,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 <SignInButton mode='modal' />
               </SignedOut>
               <SignedIn>
-                <UserButton afterSignOutUrl='/' />
+                <UserButton afterSignOutUrl='/'>
+                  <UserButton.MenuItems>
+                    <UserButton.Link
+                      label='Settings'
+                      labelIcon={<span>⚙</span>}
+                      href='/settings'
+                    />
+                  </UserButton.MenuItems>
+                </UserButton>
               </SignedIn>
             </div>
           </ConvexClientProvider>

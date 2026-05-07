@@ -17,6 +17,9 @@ importers:
       '@types/node':
         specifier: ^20.17.10
         version: 20.19.39
+      convex:
+        specifier: ^1.17.4
+        version: 1.37.0(@clerk/clerk-react@5.61.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       tsx:
         specifier: 4.21.0
         version: 4.21.0
