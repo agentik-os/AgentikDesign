@@ -793,7 +793,7 @@ Issues و PRs و skills جديدة وأنظمة تصميم جديدة، كلّه
 شكراً لكلّ من ساعد في دفع Open Design للأمام — بكود، بوثائق، بملاحظات، بـ skills جديدة، بأنظمة تصميم جديدة، أو حتى بـ issue حادّة. كلّ مساهمة حقيقية تهمّ، والجدار أدناه أسهل طريقة لقول ذلك علناً.
 
 <a href="https://github.com/agentik-os/AgentikDesign/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=agentik-os/AgentikDesign&cache_bust=2026-05-07" alt="Open Design contributors" />
+  <img src="https://contrib.rocks/image?repo=agentik-os/AgentikDesign&cache_bust=2026-05-21" alt="Open Design contributors" />
 </a>
 
 إن شحنت أوّل PR — مرحباً. تصنيف [`good-first-issue`](https://github.com/agentik-os/AgentikDesign/labels/good-first-issue) هو نقطة الدخول.
@@ -810,9 +810,9 @@ Issues و PRs و skills جديدة وأنظمة تصميم جديدة، كلّه
 
 <a href="https://star-history.com/#agentik-os/AgentikDesign&Date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&theme=dark&cache_bust=2026-05-07" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&cache_bust=2026-05-07" />
-    <img alt="Open Design star history" src="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&cache_bust=2026-05-07" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&theme=dark&cache_bust=2026-05-21" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&cache_bust=2026-05-21" />
+    <img alt="Open Design star history" src="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&cache_bust=2026-05-21" />
   </picture>
 </a>
 

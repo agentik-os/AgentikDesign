@@ -719,7 +719,7 @@ Vollständiger Walkthrough, Merge-Messlatte, Code Style und was wir nicht annehm
 Danke an alle, die Open Design vorangebracht haben: durch Code, Docs, Feedback, neue Skills, neue Design Systems oder auch ein scharfes Issue. Jeder echte Beitrag zählt, und die Wand unten ist die einfachste Art, das laut zu sagen.
 
 <a href="https://github.com/agentik-os/AgentikDesign/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=agentik-os/AgentikDesign&cache_bust=2026-05-07" alt="Open Design contributors" />
+  <img src="https://contrib.rocks/image?repo=agentik-os/AgentikDesign&cache_bust=2026-05-21" alt="Open Design contributors" />
 </a>
 
 Wenn Sie Ihren ersten PR gemergt haben: willkommen. Das Label [`good-first-issue`/`help-wanted`](https://github.com/agentik-os/AgentikDesign/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22%2C%22help+wanted%22) ist der Einstiegspunkt.
@@ -736,9 +736,9 @@ Das SVG oben wird täglich von [`.github/workflows/metrics.yml`](.github/workflo
 
 <a href="https://star-history.com/#agentik-os/AgentikDesign&Date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&theme=dark&cache_bust=2026-05-07" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&cache_bust=2026-05-07" />
-    <img alt="Open Design star history" src="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&cache_bust=2026-05-07" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&theme=dark&cache_bust=2026-05-21" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&cache_bust=2026-05-21" />
+    <img alt="Open Design star history" src="https://api.star-history.com/svg?repos=agentik-os/AgentikDesign&type=Date&cache_bust=2026-05-21" />
   </picture>
 </a>
 
